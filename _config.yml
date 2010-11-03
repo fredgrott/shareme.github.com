@@ -1,0 +1,13 @@
+# shareme's jekyll config
+
+
+# Configuration
+# we exclude slides dir so html5 slide decks will not be jeckylled
+exclude: [ 'slides']
+markdown: maruku
+pygments: true
+lsi: false
+
+# Custom variables
+title: "Fred Grott"
+url: http://shareme.github.com/
