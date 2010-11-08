@@ -107,6 +107,7 @@ div#header a:hover {
   color: #ffffff;
   border-bottom: none;
   text-decoration: none;
+  background-color: none;
 }
 
 div#header h1 {
@@ -148,6 +149,7 @@ div#header li a {
 
 div#header li a:hover {
   text-decoration: underline;
+  background-color: none;
 }
 
 div#footer {
@@ -156,7 +158,7 @@ div#footer {
   font-size: 12px;
   text-align: center;
   border-top: 2px solid #000;
-  background-color: #666666;
+  background-color: #B22222;
   padding-bottom: 5px;
   clear: both;
   float: left;
