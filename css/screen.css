@@ -184,7 +184,7 @@ div#footer img {
 
 div#content {
   float: left;
-  width: 65%;
+  width: 85%;
   margin: 20px;
   padding: 5px 5px 10px 10px;
   text-align: left;
@@ -215,7 +215,7 @@ div#menu p {
 }
 
 div#left-column {
-  width: 320px;
+  width: 420px;
   float: left;
   padding-right: 10px;
 }
