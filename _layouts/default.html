@@ -64,6 +64,49 @@
           });
       });
   </script>
+  <!--  Defining the loadscript and css for webfont loading,
+        when using multiple layouts should be copied to each
+        layout 
+        
+        style lists non-specific first than specific -->
+        
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Droid', 'Cantarell' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <style type="text/css">
+      .wf-loading p {
+        font-family: serif
+      }
+      .wf-inactive p {
+        font-family: serif
+      }
+      .wf-active p {
+        font-family: 'Droid', serif
+      }
+      .wf-loading p {
+        font-family: serif;
+        font-size: 16px
+      }
+      .wf-inactive h1 {
+        font-family: serif;
+        font-size: 16px
+      }
+      .wf-active h1 {
+        font-family: 'Cantarell', serif;
+        font-size: 16px
+      }
+    </style>
 </head>
 <body>
   <div id="header">
