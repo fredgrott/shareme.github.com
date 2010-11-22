@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Android Introduction</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/css/screen.css">
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/js/slides.js"></script>
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div class="presentation">
+    <div class="slides">
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Android Introduction</h1></header>
+          
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            1/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Android Introduction</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/google-android.png" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            2/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #2 Where did Android come from?</h1></header>
+          
+          
+          <section><p>Some people from Danger Inc, WebTV, and T-Mobile had this
+idea for a new mobile operating system for a new class
+of devices called smartphones.</p>
+<p>Thus they formed Android Inc and came up with an idea
+of a mobile operating system that has an UI that be
+declared via XML, that has full web browser, has
+a database engine, and would have the java application
+be a new VM instance with its own security sandbox
+to protect smartphone users.</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            3/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #3 Android Inc</h1></header>
+          
+          
+          <section><p>In 2005 Android Inc was bought by Google to bring about 
+a more open Mobile Operating System to OEMS which in turn
+would provide more features to device users.</p>
+<p>Open Handset Alliance was formed by Google In November
+of 2007 to oversee Android OS development with the first
+Android SDK release in November of 2007.</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            4/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #4 What is a Smartphone?</h1></header>
+          
+          
+          <section><p>Smartphones are those devices with these features:</p>
+<p>-Full web browser, usually html5 compliant
+-an embedded database engine
+-usually has a touch screen interface</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            5/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #5 The Android OS Stack</h1></header>
+          
+          
+          <section><p>The android OS stack is composed of:</p>
+<ul>
+<li>a modified linux kernel with mobile device drivers</li>
+<li>an android runtime in form of java libs and the Dalvik VM</li>
+<li>a media framework for audio</li>
+<li>an openGL 2d/3d framework</li>
+<li>SGL-2d graphics engine</li>
+<li>libc-System C Library</li>
+<li>webkit</li>
+<li>SQLite</li>
+<li>applications frameworks</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            6/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #6 The Android OS Stack</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/system-architecture.jpg" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            7/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #7 What is Java?</h1></header>
+          
+          
+          <section><p>Java is a Virtual Machine computer language with the core libraries
+and the Virtual Machine handling such things as memory 
+management. The syntax comes form both C and C++ but with a
+much simpler object model and has fewer lower-level
+facilities.</p>
+<p>Java was originally designed for a remote TV device running
+a sparc CPU. However, at this point its found in servers, 
+browsers as applets and desktops, and mobile devices.</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            8/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #8 Android Java</h1></header>
+          
+          
+          <section><p>Android Java while a subset of JavaSE through use of 
+some of Apache Harmony apis includes more apis
+for more features than JavaME does. Android applications
+have a different application life-cycle from javaMe
+in that an activity is the modular unit of an application
+and there is no exit as the OS handles when to 
+clean-up and garbage collect an activity.</p>
+<p>Android is unique in that the UI on the device is
+programmable via both java code and XML. And unlike JavaME
+Android Java Applications do not run on-top-of Android
+but at the native level. For example the HomeScreen
+application that shows the screen icons, etc is fact
+an android java application.</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            9/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #9 Each Activity its own process</h1></header>
+          
+          
+          <section><p>Android Java has some other uniqueness to the platform.
+Each activity within the same application gets the
+same user space while applications get different user IDs.
+See next slide..</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            10/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #10</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/androiduserprocess.png" />
+Credit: <a href="http://www.ibm.com/developerworks/opensource/library/x-androidsecurity/index.html?ca=drs-">CEO's IBM article</a></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            11/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #11</h1></header>
+          
+          
+          <section><p>And the Android Application Life-cycle is different from
+other java platforms in that the modular unit is an activity,
+see slide 12.</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            12/13
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidintro.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #12</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/lifecycle-226x300.png" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidintro.md">androidintro.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            13/13
+          </aside>
+        </footer>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+            
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Android Introduction</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Android Introduction</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Slide #2 Where did Android come from?</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Slide #3 Android Inc</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Slide #4 What is a Smartphone?</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Slide #5 The Android OS Stack</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Slide #6 The Android OS Stack</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Slide #7 What is Java?</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Slide #8 Android Java</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Slide #9 Each Activity its own process</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Slide #10</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Slide #11</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Slide #12</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>

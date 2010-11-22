@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Android UI Title Customization</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/css/screen.css">
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/js/slides.js"></script>
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div class="presentation">
+    <div class="slides">
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Android UI Title Customization</h1></header>
+          
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            1/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Android UI Title Customization</h1></header>
+          
+          
+          <section><p>Certain Android Quirks require that one modify code to get a good designed
+UI for an Android Application.  This set of slides concentrates on the
+reasons for customizing the title bar and the techniques.</p>
+<p>The code for this set of techniques can be found at:
+<a href="https://github.com/shareme/AndCustomTitle">AndroidcustomTitle</a></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            2/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #2</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/android_hello_world_5.png" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            3/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #3</h1></header>
+          
+          
+          <section><ul>
+<li>
+<p>Android UI Widgets use the default OS styles and colors.</p>
+</li>
+<li>
+<p>If you want to customize you have to understand some Window components
+and some of the Android Application life-cycle.</p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            4/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #4</h1></header>
+          
+          
+          <section><p>Two Tasks to Accomplish</p>
+<ul>
+<li>
+<p>Title bar a different color and customizations</p>
+</li>
+<li>
+<p>Get rid of title bar flash</p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            5/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #5</h1></header>
+          
+          
+          <section><p>Mobile Java and java Reflection Do Not Mix</p>
+<ul>
+<li>
+<p>Slow on devices below 1GHZ even with JIT enabled</p>
+</li>
+<li>
+<p>Huge battery drain</p>
+</li>
+</ul>
+<p>Thus we avoid using java reflection to grab the drawable components of the
+title bar and changing...</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            6/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #6</h1></header>
+          
+          
+          <section><p>So How Do we customize the title bar without using java reflection?</p>
+<ul>
+<li>Use Window Extended features</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            7/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #7</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/android_window_extended.png" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            8/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #8</h1></header>
+          
+          
+          <section><p>Two layout files are used, one for content and one for the title layout</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="n">requestWindowFeature</span><span class="o">(</span><span class="n">Window</span><span class="o">.</span><span class="na">FEATURE_CUSTOM_TITLE</span><span class="o">);</span>
+<span class="lineno">2</span> <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">main</span><span class="o">);</span>
+<span class="lineno">3</span> <span class="n">getWindow</span><span class="o">().</span><span class="na">setFeatureInt</span><span class="o">(</span><span class="n">Window</span><span class="o">.</span><span class="na">FEATURE_CUSTOM_TITLE</span><span class="o">,</span> <span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">title</span><span class="o">);</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            9/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #9</h1></header>
+          
+          
+          <section><p>By using a selector file in title layout you can have the imageview act as a
+button..</p>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="lineno"> 2</span>    <span class="nt">&lt;RelativeLayout</span> <span class="na">android:id=</span><span class="s">&quot;@+id/header&quot;</span>
+<span class="lineno"> 3</span>       <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="lineno"> 4</span>       <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+<span class="lineno"> 5</span>       <span class="na">android:layout_width=</span><span class="s">&quot;fill_parent&quot;</span>
+<span class="lineno"> 6</span>       <span class="na">android:background=</span><span class="s">&quot;#066dc9&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 7</span>    <span class="nt">&lt;ImageView</span> <span class="na">android:src=</span><span class="s">&quot;@drawable/companylogo&quot;</span>
+<span class="lineno"> 8</span>        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+<span class="lineno"> 9</span>        <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span>
+<span class="lineno">10</span>        <span class="na">android:layout_centerVertical=</span><span class="s">&quot;true&quot;</span>
+<span class="lineno">11</span>        <span class="na">android:id=</span><span class="s">&quot;@+id/back&quot;</span>
+<span class="lineno">12</span>        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+<span class="lineno">13</span>        <span class="na">android:layout_alignParentTop=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno">14</span>    <span class="nt">&lt;TextView</span> <span class="na">android:id=</span><span class="s">&quot;@+id/title&quot;</span>
+<span class="lineno">15</span>        <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+<span class="lineno">16</span>        <span class="na">android:gravity=</span><span class="s">&quot;center&quot;</span>
+<span class="lineno">17</span>        <span class="na">android:textSize=</span><span class="s">&quot;20px&quot;</span>
+<span class="lineno">18</span>        <span class="na">android:textColor=</span><span class="s">&quot;#ffffff&quot;</span>
+<span class="lineno">19</span>        <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
+<span class="lineno">20</span>        <span class="na">android:text=</span><span class="s">&quot;New Title&quot;</span>
+<span class="lineno">21</span>        <span class="na">android:background=</span><span class="s">&quot;#335370&quot;</span>
+<span class="lineno">22</span>        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+<span class="lineno">23</span>        <span class="na">android:layout_alignParentTop=</span><span class="s">&quot;true&quot;</span>
+<span class="lineno">24</span>        <span class="na">android:padding=</span><span class="s">&quot;9dip&quot;</span>
+<span class="lineno">25</span>        <span class="na">android:layout_margin=</span><span class="s">&quot;5dip&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno">26</span>   <span class="nt">&lt;/RelativeLayout&gt;</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            10/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #10</h1></header>
+          
+          
+          <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="lineno"> 2</span>    <span class="nt">&lt;selector</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span>      <span class="nt">&lt;item</span> <span class="na">android:state_pressed=</span><span class="s">&quot;false&quot;</span>
+<span class="lineno"> 5</span>          <span class="na">android:drawable=</span><span class="s">&quot;@drawable/mobilebyteslogo_normal&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span>      <span class="nt">&lt;item</span> <span class="na">android:state_pressed=</span><span class="s">&quot;true&quot;</span>
+<span class="lineno"> 8</span>         <span class="na">android:drawable=</span><span class="s">&quot;@drawable/mobilebyteslogo_pressed&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span>   <span class="nt">&lt;/selector&gt;</span>
+</pre></div>
+
+<p>and of course the events code in onCreate</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">back</span><span class="o">).</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span>         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4</span>             <span class="n">dispatchKeyEvent</span><span class="o">(</span><span class="k">new</span> <span class="n">KeyEvent</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">ACTION_DOWN</span><span class="o">,</span>
+<span class="lineno">5</span>                     <span class="n">KeyEvent</span><span class="o">.</span><span class="na">KEYCODE_BACK</span><span class="o">));</span>
+<span class="lineno">6</span>             <span class="n">dispatchKeyEvent</span><span class="o">(</span><span class="k">new</span> <span class="n">KeyEvent</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">ACTION_UP</span><span class="o">,</span>
+<span class="lineno">7</span>                     <span class="n">KeyEvent</span><span class="o">.</span><span class="na">KEYCODE_BACK</span><span class="o">));</span>
+<span class="lineno">8</span>         <span class="o">}</span>
+<span class="lineno">9</span>     <span class="o">});</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            11/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #11</h1></header>
+          
+          
+          <section><p>Title text gets added in onCreate with</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">((</span><span class="n">TextView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">title</span><span class="o">)).</span><span class="na">setText</span><span class="o">(</span><span class="s">&quot;Custom Status Bar&quot;</span><span class="o">);</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            12/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #12</h1></header>
+          
+          
+          <section><p>Do not forget the Theme that sets the Title width as since we are
+using the Window Extended features we have to define a title width,
+otherwise we will get a default title width...first the style
+grabbing the default window background..</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="lineno">2</span>     <span class="nt">&lt;resources&gt;</span>
+<span class="lineno">3</span>       <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;WindowTitleBackground&quot;</span>
+<span class="lineno">4</span>           <span class="na">parent=</span><span class="s">&quot;android:WindowTitleBackground&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">5</span>            <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:background&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">6</span>                @android:color/transparent<span class="nt">&lt;/item&gt;</span>
+<span class="lineno">7</span>       <span class="nt">&lt;/style&gt;</span>
+<span class="lineno">8</span>     <span class="nt">&lt;/resources&gt;</span>
+</pre></div>
+
+<p>Than our theme which we define in the sometimes in the application tag</p>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="lineno"> 2</span>    <span class="nt">&lt;resources&gt;</span>
+<span class="lineno"> 3</span>      <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyTheme&quot;</span> <span class="na">parent=</span><span class="s">&quot;android:Theme&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 4</span>         <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:windowTitleSize&quot;</span><span class="nt">&gt;</span>54px<span class="nt">&lt;/item&gt;</span>
+<span class="lineno"> 5</span>         <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:windowTitleBackgroundStyle&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 6</span>             @style/WindowTitleBackground<span class="nt">&lt;/item&gt;</span>
+<span class="lineno"> 7</span>         <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:windowContentOverlay&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 8</span>             @drawable/title_bar_shadow2<span class="nt">&lt;/item&gt;</span>
+<span class="lineno"> 9</span>      <span class="nt">&lt;/style&gt;</span>
+<span class="lineno">10</span>   <span class="nt">&lt;/resources&gt;</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            13/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #13</h1></header>
+          
+          
+          <section><ul>
+<li>Using only default settings in application tag
+ in AndroidManifest still gives a title bar flash, why?</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            14/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #14</h1></header>
+          
+          
+          <section><ul>
+<li>
+<p>Using Default AndroidManifest settings applies the title bar
+  default style theme before onCreate fully initializes, hence the
+  title bar flash even though you have called</p>
+<p>requestWindowFeature(Window.FEATURE_NO_TITLE);</p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            15/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #15</h1></header>
+          
+          
+          <section><p>So we setup a splash activity that posts a delayed intent request on a thread
+and we set the androidManifest application tag to use this theme</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="nt">&lt;application</span> <span class="na">android:icon=</span><span class="s">&quot;@drawable/andcustomtitleicon&quot;</span>
+<span class="lineno">2</span>   <span class="na">android:label=</span><span class="s">&quot;@string/app_name&quot;</span>
+<span class="lineno">3</span>     <span class="na">android:theme=</span><span class="s">&quot;@android:style/Theme.NoTitleBar&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            16/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #16</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/andcustomtitleicon.png" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            17/18
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androiduititle.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #17</h1></header>
+          
+          
+          <section><p><a href="http://www.youtube.com/watch?v=e-iQIkC-u-g0">AndCustomTitleVideo</a></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androiduititle.md">androiduititle.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            18/18
+          </aside>
+        </footer>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+            
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Android UI Title Customization</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Android UI Title Customization</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Slide #2</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Slide #3</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Slide #4</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Slide #5</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Slide #6</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Slide #7</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Slide #8</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Slide #9</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Slide #10</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Slide #11</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Slide #12</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Slide #13</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Slide #14</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Slide #15</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Slide #16</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-18">
+        <th><a href="#slide18">Slide #17</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
