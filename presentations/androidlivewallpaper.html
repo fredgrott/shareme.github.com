@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Android Live Wallpapers</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/css/screen.css">
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="file:///usr/local/lib/python2.6/dist-packages/landslide/themes/default/js/slides.js"></script>
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div class="presentation">
+    <div class="slides">
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Android Live Wallpapers</h1></header>
+          
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            1/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Android Live Wallpapers</h1></header>
+          
+          
+          <section><p>Android 2.1 introduced the concept of Live Wallpapers</p>
+<ul>
+<li>
+<p>Android 2.1 or higher</p>
+</li>
+<li>
+<p>Requires</p>
+<p>!xml
+<uses-sdk android:minSdkVersion="7" /></p>
+</li>
+<li>
+<p>Requires</p>
+<p>!xml
+<uses-feature
+android:name="android.software.live_wallpaper" /></p>
+</li>
+<li>
+<p>Requires
+    !xml
+    <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper" /></p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            2/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #2</h1></header>
+          
+          
+          <section><p>Sample code can be found at:
+<a href="https://github.com/shareme/DrWhoLiveWallpaper">DrWhoLiveWallpaper</a></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            3/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #3</h1></header>
+          
+          
+          <section><p>All the rage is to do an animated OpenGL LW</p>
+<ul>
+<li>
+<p>requires proper opengl setup</p>
+</li>
+<li>
+<p>requires proper opengl threading</p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            4/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #4</h1></header>
+          
+          
+          <section><p>Richard Green() determined that GLSurfaceview had 99% of the
+code required and modified that and made a code submission and
+a blog post:</p>
+<p><a href="http://www.rbgrn.net/content/354-glsurfaceview-adapted-3d-live-wallpapers">GLWallpaperService blog post</a></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            5/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #5</h1></header>
+          
+          
+          <section><p>Thus with that code all we need is a engine(WallPaperService term) and
+the opengl renderer we wil be using.</p>
+<p>But, lets begin with the AndroidManinfest setup first.</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            6/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #6</h1></header>
+          
+          
+          <section><p>The AndroidManifest setup for LiveWallpapers</p>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="lineno"> 2</span>   <span class="nt">&lt;manifest</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<span class="lineno"> 3</span>   <span class="na">package=</span><span class="s">&quot;com.mobilebytes.drwholivewallpaper&quot;</span>
+<span class="lineno"> 4</span>   <span class="na">android:versionCode=</span><span class="s">&quot;1&quot;</span>
+<span class="lineno"> 5</span>   <span class="na">android:versionName=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 6</span> <span class="nt">&lt;application</span> <span class="na">android:icon=</span><span class="s">&quot;@drawable/drwholivewpicon&quot;</span>
+<span class="lineno"> 7</span>    <span class="na">android:label=</span><span class="s">&quot;@string/app_name&quot;</span><span class="nt">&gt;</span>
+<span class="lineno"> 8</span>   <span class="nt">&lt;service</span>
+<span class="lineno"> 9</span>   <span class="na">android:label=</span><span class="s">&quot;DrWhoLive Wallpaper&quot;</span>
+<span class="lineno">10</span>   <span class="na">android:name=</span><span class="s">&quot;.DrWhoLiveWallpaperService&quot;</span>
+<span class="lineno">11</span>   <span class="na">android:permission=</span><span class="s">&quot;android.permission.BIND_WALLPAPER&quot;</span><span class="nt">&gt;</span>
+<span class="lineno">12</span>   <span class="nt">&lt;intent-filter&gt;</span>
+<span class="lineno">13</span>     <span class="nt">&lt;action</span>
+<span class="lineno">14</span>       <span class="na">android:name=</span><span class="s">&quot;android.service.wallpaper.WallpaperService&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno">15</span>   <span class="nt">&lt;/intent-filter&gt;</span>
+<span class="lineno">16</span>   <span class="nt">&lt;meta-data</span> <span class="na">android:name=</span><span class="s">&quot;android.service.wallpaper&quot;</span>
+<span class="lineno">17</span>             <span class="na">android:resource=</span><span class="s">&quot;@xml/livewallpaper&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno">18</span> <span class="nt">&lt;/service&gt;</span>
+<span class="lineno">19</span> 
+<span class="lineno">20</span> <span class="nt">&lt;/application&gt;</span>
+<span class="lineno">21</span> <span class="nt">&lt;uses-sdk</span> <span class="na">android:minSdkVersion=</span><span class="s">&quot;7&quot;</span> <span class="nt">/&gt;</span>
+<span class="lineno">22</span>  <span class="nt">&lt;uses-feature</span>
+<span class="lineno">23</span> <span class="na">android:name=</span><span class="s">&quot;android.software.live_wallpaper&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+</manifest></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            7/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #7</h1></header>
+          
+          
+          <section><p>The LiveWallpaper layout lives in a res/xml folder
+    !xml
+    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+    <wallpaper
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:thumbnail="@drawable/icon"
+      android:description="@string/app_name"/></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            8/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #8</h1></header>
+          
+          
+          <section><p>Now we need something opengl, a 3dTunnel</p>
+<ul>
+<li>
+<p>starting point</p>
+</li>
+<li>
+<p>calculate number of vertices</p>
+</li>
+<li>
+<p>allocate arrays</p>
+</li>
+<li>
+<p>generate object data which fills the arrays</p>
+</li>
+<li>
+<p>clear buffers and transfer array data to buffers</p>
+</li>
+<li>
+<p>nextFrame and render methods than use the buffer data</p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            9/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #9</h1></header>
+          
+          
+          <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="kd">public</span> <span class="nf">Tunnel3D</span><span class="o">(</span><span class="kt">int</span> <span class="n">revolution</span><span class="o">,</span> <span class="kt">int</span> <span class="n">depth</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2</span>     <span class="n">start_a</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3</span>     <span class="n">start_v</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span>     <span class="c1">// Calculate number of vertices...</span>
+<span class="lineno"> 6</span>     <span class="n">nx</span> <span class="o">=</span> <span class="n">revolution</span><span class="o">;</span>
+<span class="lineno"> 7</span>     <span class="n">ny</span> <span class="o">=</span> <span class="n">depth</span><span class="o">;</span>
+<span class="lineno"> 8</span>     <span class="n">nv</span> <span class="o">=</span> <span class="n">nx</span> <span class="o">*</span> <span class="n">ny</span><span class="o">;</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span>     <span class="c1">// Allocate arrays...</span>
+<span class="lineno">11</span>     <span class="n">colors</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">nv</span> <span class="o">*</span> <span class="mi">3</span><span class="o">];</span>
+<span class="lineno">12</span>     <span class="n">vertices</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">float</span><span class="o">[</span><span class="n">nv</span> <span class="o">*</span> <span class="mi">3</span><span class="o">];</span>
+<span class="lineno">13</span>     <span class="n">faces</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">short</span><span class="o">[((</span><span class="n">nx</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">*</span> <span class="o">(</span><span class="n">ny</span> <span class="o">-</span> <span class="mi">1</span><span class="o">))</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="o">];</span>
+<span class="lineno">14</span>     <span class="n">texture</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">float</span><span class="o">[</span><span class="n">nv</span> <span class="o">*</span> <span class="mi">2</span><span class="o">];</span>
+<span class="lineno">15</span> 
+<span class="lineno">16</span>     <span class="c1">// Generate object data...</span>
+<span class="lineno">17</span>     <span class="n">genVertex</span><span class="o">();</span>
+<span class="lineno">18</span>     <span class="n">genFaces</span><span class="o">();</span>
+<span class="lineno">19</span>     <span class="n">genColors</span><span class="o">();</span>
+<span class="lineno">20</span>     <span class="n">genTexture</span><span class="o">();</span>
+<span class="lineno">21</span> 
+<span class="lineno">22</span>     <span class="c1">// Build direct buffer objects...</span>
+<span class="lineno">23</span>     <span class="n">buildBuffers</span><span class="o">();</span>
+<span class="lineno">24</span> 
+<span class="lineno">25</span>     <span class="c1">// Blit data...</span>
+<span class="lineno">26</span>     <span class="n">fillVertex</span><span class="o">();</span>
+<span class="lineno">27</span>     <span class="n">fillFaces</span><span class="o">();</span>
+<span class="lineno">28</span>     <span class="n">fillColors</span><span class="o">();</span>
+<span class="lineno">29</span>     <span class="n">fillTexture</span><span class="o">();</span>
+<span class="lineno">30</span> <span class="o">}</span>
+</pre></div>
+</section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            10/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #10</h1></header>
+          
+          
+          <section><p>Now</p>
+<ul>
+<li>
+<p>a Renderer Class that implements GLSurfaceView.Renderer,
+        GLWallpaperService.Renderer</p>
+</li>
+<li>
+<p>A MainActivity</p>
+</li>
+</ul></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            11/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide has_code">
+        <div class="inner">
+          
+          <header><h1>Slide #11</h1></header>
+          
+          
+          <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span>  <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
+<span class="lineno"> 2</span> <span class="cm">/** The gl view. */</span>
+<span class="lineno"> 3</span> <span class="kd">private</span> <span class="n">GLSurfaceView</span> <span class="n">glView</span><span class="o">;</span>
+<span class="lineno"> 4</span> <span class="nd">@Override</span>
+<span class="lineno"> 5</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6</span>     <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+<span class="lineno"> 7</span>     <span class="n">glView</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GLSurfaceView</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+<span class="lineno"> 8</span>     <span class="n">glView</span><span class="o">.</span><span class="na">setDebugFlags</span><span class="o">(</span><span class="n">GLSurfaceView</span><span class="o">.</span><span class="na">DEBUG_CHECK_GL_ERROR</span><span class="o">);</span>
+<span class="lineno"> 9</span>     <span class="n">glView</span><span class="o">.</span><span class="na">setRenderer</span><span class="o">(</span><span class="k">new</span> <span class="n">DrWhoLiveRenderer</span><span class="o">(</span><span class="n">getBaseContext</span><span class="o">()));</span>
+<span class="lineno">10</span>     <span class="n">setContentView</span><span class="o">(</span><span class="n">glView</span><span class="o">);</span>
+<span class="lineno">11</span> <span class="o">}</span>
+<span class="lineno">12</span> <span class="nd">@Override</span>
+<span class="lineno">13</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onDestroy</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">14</span>     <span class="kd">super</span><span class="o">.</span><span class="na">onDestroy</span><span class="o">();</span>
+<span class="lineno">15</span> <span class="o">}</span>
+<span class="lineno">16</span> <span class="nd">@Override</span>
+<span class="lineno">17</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onPause</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">18</span>     <span class="n">glView</span><span class="o">.</span><span class="na">onPause</span><span class="o">();</span>
+<span class="lineno">19</span>     <span class="kd">super</span><span class="o">.</span><span class="na">onPause</span><span class="o">();</span>
+<span class="lineno">20</span> <span class="o">}</span>
+<span class="lineno">21</span> <span class="nd">@Override</span>
+<span class="lineno">22</span> <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onResume</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">23</span>     <span class="kd">super</span><span class="o">.</span><span class="na">onResume</span><span class="o">();</span>
+<span class="lineno">24</span>     <span class="n">glView</span><span class="o">.</span><span class="na">onResume</span><span class="o">();</span>
+<span class="lineno">25</span> <span class="o">}</span>
+</pre></div>
+
+<p>}</p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            12/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #12</h1></header>
+          
+          
+          <section><p><img src="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/images/drwholivewp_Screenshot.png" /></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            13/14
+          </aside>
+        </footer>
+      </div>
+      
+      <!-- slide source: androidlivewallpaper.md -->
+      <div class="slide">
+        <div class="inner">
+          
+          <header><h1>Slide #13</h1></header>
+          
+          
+          <section><p>Video can be found here:
+<a href="http://www.youtube.com/watch?v=4oGKcIuYiQE">DrWhoLiveWallpaperVideo</a></p></section>
+          
+        </div>
+        <footer>
+          
+          <aside class="source">
+            Source: <a href="file:///home/fredgrott/my35ws_github/shareme.github.com/slides/androidlivewallpaper.md">androidlivewallpaper.md</a>
+          </aside>
+          
+          <aside class="page_number">
+            14/14
+          </aside>
+        </footer>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+            
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Android Live Wallpapers</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Android Live Wallpapers</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Slide #2</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Slide #3</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Slide #4</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Slide #5</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Slide #6</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Slide #7</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Slide #8</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Slide #9</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Slide #10</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Slide #11</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Slide #12</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+            
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Slide #13</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>
