@@ -15,29 +15,24 @@ html, body {
 body {
   font-family: "Cantarell", sans-serif;
   font-size: 9pt;
-  color: #2F4F4F;
-  background: #B0C4DE;
+  color: #333;
+  background: #FFFFFF;
 }
 
-a,
-a:visited,
-a:link,
-a:active {
-  color: #3d3d3d;
+a {
+  color: #55862e;
   text-decoration: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px dotted #000000;
+  border-bottom: solid 1px #3030a2;
 }
 
 a:hover {
-  color: #ffffff;
   text-decoration: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px dotted #000000;
-  background-color: #191970;
+  border-bottom: 0;
+}
+
+a:visited {
+  color: #777;
+  border-bottom: solid 1px #ccc;
 }
 
 blockquote {
@@ -60,18 +55,7 @@ img {
   padding: 2px;
 }
 
-pre {
-  background: #f8f8f8;
-  border: 1px solid #e7e5dC;
-  border-width: 1px 0 4px 6px;
-  padding: 1em;
-  overflow: auto;
-  color: black;
-  line-height: 120%;
-  font-family: "consolas", "monaco", "courier new", "courier", monospace;
-  font-size: 14px;
-  letter-spacing: 0;
-}
+
 
 pre#geekcode {
   background-color: #000000;
@@ -85,6 +69,16 @@ pre#geekcode {
   margin-right: auto;
 }
 
+pre {
+  border-left: 2px solid #55862e;
+  padding-left: 1em;
+}
+
+pre, code {
+    font-family: "Times", monospace;
+    /* font-size: 1.142em; */
+}
+
 th { text-align:left; }
 
 tt {
@@ -93,7 +87,7 @@ tt {
 }
 
 div#header {
-  background: url("/images/header.png") repeat-x;
+  
 }
 
 div#header a {
