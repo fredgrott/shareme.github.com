@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Intro Android</title>
+    <title>Device and App ID</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fred Grott, Agile Android Devlopment in Greater Chicago-Land for startups and other firms.">
     <meta name="author" content="fred Grott">
@@ -97,11 +97,9 @@ body{
               <a href="../index.html">Overview</a>
             </li>
             <li class="active">
-              <a href="./introandroid.html">IntroAndroid</a>
+              <a href="./deviceidappid.html">IntroAndroid</a>
             </li>
-            <li class="">
-                <a href="./androidhello.html">AndroidHello</a>
-             </li>
+           
             
             
           </ul>
@@ -117,10 +115,9 @@ body{
       <!-- Masthead
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
-  <h1>Introduction to Android</h1>
+  <h1>Device and APP ID</h1>
   <h3>by Fred Grott, Android Developer, created Jan 2012</h3>
-  <p class="lead">In 2003 Android Inc was formed to created the first OS for a 
-      smart-phone, a mobile cellphone that is aware of a users location and preferences.</p>
+  <p class="lead">getting a devide or app id for all the right reasons..</p>
       <div class="row">
                 <div class="span12 columns">
                     <!-- AddThis Button BEGIN -->
@@ -176,137 +173,77 @@ body{
      </div>
   <div class="subnav">
     <ul class="nav pills">
-      <li><a href="#androidinc">Anbdroid INC</a></li>
-      <li><a href="#mobiletech">Mobile Tech</a></li>
-      <li><a href="#googleoha">Google and OHA</a></li>
-      <li><a href="#dalvik">Dalvik VM</a></li>
-      <li><a href="#osframeworks">OS and Frameworks</a></li>
+      <li><a href="#useid">Use the ID Luke</a></li>
+      <li><a href="#androidid">ANDROID_ID</a></li>
+      <li><a href="#uuid">UUID</a></li>
+      <li><a href="#deviceidcode">Code</a></li>
+      <li><a href="#appi">APPID</a>,/li>
+      <li><a href="#thanks">Thanks</a></li>
     </ul>
   </div>
 </header>
       
-      <!-- android inc
+      <!-- useid
 ================================================== -->
-<section id="androidinc">
+<section id="useid">
   <div class="page-header">
-    <h1>Android INC <small>How Android INC changed mobile device history.</small></h1>
+    <h1>Use ID <small>why doi we need to use an ID?.</small></h1>
   </div>
-  <h2>Rubin, Miner, Sears, and White</h2>
+  <h2>ID</h2>
   <div class="row">
     <div class="span8">
-        <h3>Formation of Android INC</h3>
-      <p>In 2003 several people go together to envision a new mobile operating 
-          system that would be always aware of the users location and preferences. 
-          This stealth tema was composed of Rubin(the co-founder of Danger), 
-          Miner(Wildfire Communications), Sears(T-Mobile VP), and White(WebTV).</p>
-       <p>Other competing teams were also coming up with the same smart-phone 
-           concept but different implementations. Savaje OS ran JavaSE on bare metal 
-           with a JavME-CDC plugin as deployed on some limited HP pda devices. </p>
-       <p>Unfortunately, for Apple, Savje was the first to conceive of a mobile 
-           device with a web browser and other features. An innovation noticed by 
-           other comepting teams and imporved upon.</p>
+        <h3>Intro</h3>
+      <p>The are several use cases for getting a device ID or application id but they all boil down to
+          the requirement of indentifiying a unique device/application install combination for debugging.</p>
+       <p>To compicate matters an IDmight be computed differently on a netwokr type such as 
+           CDMA or GSM or WIFI. Than as a bonus certain Android devices generate anull ANDROID_ID String.</p>
+       
     </div>
-    <div class="span4">
-        <div class="well">
-        <h3>A Smartphone</h3>
-        <p>A mobile device that is always aware of usrs location and preferences.</p>
-      </div>
-     </div>
+    </div>
      </div>
 </section>
 
-<!-- mobiletech
+<!-- androidID
     ===============================================-->
-<section id="mobiletech">
+<section id="androidid">
   <div class="page-header">
-    <h1>Mobile Tech <small>A fast march to a usable celluar technology.</small></h1>
+    <h1>ANDROID_ID <small>what is that crazy 64 bit number.</small></h1>
   </div>
-  <h2>Rapid Cellular Innovation</h2>
+  <h2>Android, I do not need and stinky ID</h2>
   <div class="row">
     <div class="span8">
-        <h3>Mobile Technology</h3>
-      <p>while the first mobile phone was invented inthe 1970s we really did not 
-          get a huge spike in mobile technology innovation unti the late 1990s to early 2000s.
-          There were several key areas of innovation.</p>
-       <p>Several companies at the same time, including one in Canada, came up 
-           with a Real-Time-Operating System concept of having a real-time OS power 
-           the celluar-radio-chip and  have another OS power rest fo the features of 
-           the phone and the applications.</p>
+        <h3>ANDROID_ID is special</h3>
+      <p>The ANDROID _ID is a special 64 bit number that android computes 
+          per device to be an unique number. Its computd by settings value being generated from some seeds.
+          Two seeds are used both the Power.settings seed and the android account seed. Be careful here, many
+          still get tripped up by this in that because it uses more than one seed and one of the seeds being the same during factory reset, ie the 
+          google account, and the other seed being gnerated from a cyrpto function that wil be different upon the factory reset.
+          But, its such a smal number of cases, that no use worrying about it. </p>
+        <p>This means that ANDROID_ID will only be non-null if its a google exeperience device. In other words
+            KindleFire does not have one and neither does OPhone devices.</p>
     </div>
     <div class="span4">
         <div class="well">
-        <h3>RTOS</h3>
-        <p>A mobile operating system that operates in real time-non-blocing mode 
-            to handle functions ofthe cellular-radio-chip.</p>
+        <h3>ANDROID_ID</h3>
+        <p>Only non-null for google expereicne devices, ie ones where you have othave a google account to unlock. It will
+            be re-generated upon factory reset.</p>
       </div>
      </div>
      </div>
-     <div class="row">
-    <div class="span8">
-        <h3>Baseband Technology</h3>
-      <p>When cell phones were invented in the 1970s they big heavy things and 
-          that big and heavy trend carried well in the 1980s, Motorola's TAC-phones 
-          where about 8lbs or more. Someone had to shrink down the electronics.</p>
-          <p>During that progression towards shrinking of electronics into smaller 
-              chips several came up with the cocnept of the cellular radio electronics 
-              on one chip called a baseband chip</p>
-    </div>
-    <div class="span4">
-        <div class="well">
-        <h3>BaseBand</h3>
-        <p>A mobile cell-phone chip that handles the cellular radio functions.</p>
-      </div>
-     </div>
-     </div>
-     <div class="row">
-    <div class="span8">
-        <h3>Celluar Radio  Technology</h3>
-        <p>BellLabs first came up withe the cellar radio concept in the late 1940s. 
-            Basically its a network of radio antennas that hands off receiving and sending 
-            to a different antenna dependent on the location of the user's device.'</p>
-      <p>During the 1980s and 1990s Cellular Radio Technology was very primitive 
-          and not very fast. What began as slow cellular radio standard in Europe 
-          named GSM became faster as antennna hardware electronics was shrunk 
-          and softtware running the network became more feature compete and faster. </p>
-    <p>CDMA, code division multiple access, actually first began as concepts in 
-        the USSR and was first deployed as a service ofr mobile phones in cars. 
-        As other countries also adpoted the technolgy it also ws also depoyd to 
-        cars often civil service government units such as police. Qualcomm started 
-        improving the technology and came up with some stadnrads that are 
-        nicknamed cdmaOne, cdma2000.</p>
-    </div>
-    <div class="span4">
-        <div class="well">
-        <h3>GSM, and CDMA</h3>
-        <p>GSM, an European stnadard, its is frequency modulated but ulike 
-            FM-radio is modluated by <strong>gaussian shift hence the name 
-                Gaussian Shift Modulation(GSM)</strong>.</p>
-         <p>CDMA, code division multiple access, refers to takinga fast code and 
-             xoring the slow data to that fast code to rpduce amodulated signal. 
-             Each trasnmitters has a unique fast code and the resulting signals can 
-             be multiplexed over one channel which is the <strong>multiple access 
-                 part of CDMA</strong>.</p>
-      </div>
-     </div>
-     </div>
-     
 </section>
-<!-- googleoha
+<!-- uuid
     ===============================================-->
-<section id="googleoha">
+<section id="uuid">
   <div class="page-header">
-    <h1>Goole and OHA <small>Google sets on to change mobile technology 
-        with some help.</small></h1>
+    <h1>UUID <small>What? Another ID?</small></h1>
   </div>
-  <h2>Android's Steps Towards Stardom</h2>
+  <h2>UUID'</h2>
   <div class="row">
     <div class="span8">
-        <h3>Goolge Acquires Android INC</h3>
-      <p>In 2005, Google bought Android Inc with most of the team staying on 
-          with Google. During 2005 to 2007 Google decided to come up with a new 
-          way of implementing java.</p>
-       <p>In JavaME java applications are constrained to the application layer and 
-           never enter the OS-layer. In pratical implementation terms that meant that 
+        <h3>UUID, every device has one</h3>
+      <p>.</p>
+       <p>In JavaME java applications are constrained to the applicationlayer and 
+           never enter the OS-layer. In pratical implemntation terms that meant that 
            the OEM was never able to upgrade the JavaVM on a javaME powered device 
            much to the disdain by users and security experts. Google came up with 
            the concept of using JNI to bridge between the C++/C parts of the OS and 
@@ -335,7 +272,7 @@ body{
           as a clean room implementation  based on Apache Harmony and with a 
           register-based virtual machine called Dalvik.</p>
     <p>The very first Android device was released in August of 2008 and 
-        nicknamed the G1 and deployed to the T-Mobile network.</p>
+        nicknamed the G1 and deployed toeh T-Mobile network.</p>
     </div>
     <div class="span4">
         <div class="well">
@@ -370,7 +307,7 @@ body{
       <p>Dalivk VM is named for a small town in Iceland by its creator. Dalivk is 
           implented as a register-based virtual machine.</p>
       <p>Thus, how is a register based VM faster than a stack based VM? Okay, 
-          some specifics to java is the fact that java byte-code is 8bit-based. 
+          some specifics ot java is the fact that java byte-code is 8bit-based. 
          Now for the fun, in Dalvik registers are 16-bits wide which measn that 
          we can have one java code instruction and we have room 
          left over to store the 4-bit address of a local vaiable and thus 
@@ -465,7 +402,7 @@ body{
            <h3>Application Layer</h3>
            <p>The applicaiton sits on top of that stack to provide the api we write 
                applications to to interface with all the featrues and functions of the device
-               while at the same time managing security and permissions in such a 
+               while at the saem time managing security and permissions in such a 
                way that we have a use rmanaged sytem of permitting the applicaiton 
                to access  device system stuff.</p>
     </div>

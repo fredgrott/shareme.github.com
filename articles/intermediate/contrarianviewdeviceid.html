@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contrarian View, DeviceID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fred Grott, Agile Android Devlopment in Greater Chicago-Land for startups and other firms.">
+    <meta name="author" content="fred Grott">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../twitterbswip2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="../../twitterbswip2.0/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../twitterbswip2.0/css/docs.css" rel="stylesheet">
+    <link href="../../twitterbswip2.0/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link rel="stylesheet/less" href="../../twitterbswip2.0/less/bootstrap.less">
+<script src="../../twitterbswip2.0/js/less-1.2.1.js"></script>
+
+<!-- CSS Over-rides go here
+    
+     
+    -->
+<style>
+.marketing-byline {
+  
+  color: #404040 ;
+  
+}
+
+.prettyprint {
+  display: block;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  word-wrap: normal;
+  padding: 10px;  
+  background-color: #f9f7f9;
+  border: 1px solid #C8C8C8;
+}
+
+
+
+
+hr.soften {
+  height: 15px;
+  margin: 54px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
+  border: 0;
+}
+
+body{
+     padding-top: 40px;
+}
+
+</style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../../twitterbswip2.0/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="../../twitterbswip2.0/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../twitterbswip2.0/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../twitterbswip2.0/ico/apple-touch-icon-114x114.png">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23593281-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50" onload="prettyPrint()">
+      
+      <!-- shareme.github.com navbar
+          =================================================-->
+         
+          <div class="navbar navbar-fixed-top">
+              
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="../../articles.html">Articles</a>
+          <ul class="nav">
+            <li class="">
+              <a href="../../articles.html">Overview</a>
+            </li>
+            <li class="active">
+              <a href="./contrarianviewdeviceid.html">Contrarian View, DeviceID</a>
+            </li>
+           
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  
+  
+  
+    <div class="container">
+
+      <!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <h1>Contrarian View, DeviceID</h1>
+  <h3>by Fred Grott, Android Developer, created Jan 2012</h3>
+  <p class="lead">deviceID is not what it seems at first glance or even the second glance.</p>
+      <div class="row">
+                <div class="span12 columns">
+                    <!-- AddThis Button BEGIN -->
+                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a><!-- formspring -->
+<a class="addthis_button_preferred_2"></a><!-- facebook -->
+<a class="addthis_button_preferred_3"></a><!-- twitter tweet this -->
+<a class="addthis_button_preferred_4"></a><!-- Email this -->
+<a class="addthis_button_dzone"></a><!-- Dzone -->
+<a class="addthis_button_linkedin"></a><!-- Linkedin -->
+<a class="addthis_button_stumbleupon"></a><!-- StumbleUpon -->
+<a class="addthis_button_digg"></a><!-- Digg -->
+<a class="addthis_button_delicious"></a><!-- delicous -->
+<a class="addthis_button_reddit"></a><!-- reddit -->
+<a class="addthis_button_google_plusone"  g:plusone:size='medium' ></a><!-- g-plus non badge just  1+ counts -->
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ea7e18b3e78fcd8"></script>
+<script type="text/javascript">
+     var addthis_config = {
+        data_ga_property: 'UA-23593281-1'
+     };
+</script>
+<!-- AddThis Button END -->
+
+
+
+
+                 </div>
+            </div>
+          
+     <div class="row">
+      <div class="span4">
+        <div class="well">
+        <h3>Android Versions Applicable</h3>
+        <p>All android versions</p>
+      </div>
+     </div>
+     <div class="span4">
+        <div class="well">
+        <h3>Tools Needed</h3>
+        <p>none</p>
+      </div>
+     </div>
+      <div class="span4">
+        <div class="well">
+        <h3>Downloads Needed</h3>
+        <p>none</p>
+      </div>
+     </div>
+     </div>
+  <div class="subnav">
+    <ul class="nav pills">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#androidid">ANDROID_ID</a></li>
+      <li><a href="#deviceid">deviceID</a></li>
+      <li><a href="#UUID">UUID</a></li>
+      <li><a href="#solution">A solution</a></li>
+    </ul>
+  </div>
+</header>
+      
+      <!-- intro
+================================================== -->
+<section id="intro">
+  <div class="page-header">
+    <h1>Introduction <small>so many devices, so little time.</small></h1>
+  </div>
+  <h2>What, we do not need no stinking ID</h2>
+  <div class="row">
+    <div class="span8">
+        <h3>Why a device ID?</h3>
+       <p>In Android development there will be times where you will need to track
+           debug reports from develoeprs, testers and end users and what better 
+           way than if you have access to some device type ID? But, its a little comlicated 
+           and many who did a first glance got it wrong.</p>
+        <h3>Android Devices</h3>
+      <p>We have many device platforms in the android device family. We have 
+          phones, we have tablets, we are getting TVs, and it would not suprise me if
+          soon we would be seeing watches running Android OS.</p>
+       <p>Thus, with all those confusing things lets review some concepts.
+           An Google-Experience-Device is one in which we have to login in to
+           our Google account ot unlock the first time we boot it up.  That means that 
+           KindFire is not a Google-Experience-Device, niehter are the OPhone devices, 
+           or Barnes and Noble's nook.</p>
+       <p>The second concept, while we have competing standards of how an IME is computed
+           depending upon whether its on a CDMA or GSM network, a UUID is somewhat universal and 
+           every Linux/Unix device has one. If you are form the MS world, MS calls their thing GUIDs, and
+           the IETF assigns both to a thing called URNs.</p>
+    </div>
+    <div class="span4">
+        <div class="well">
+        <h3>Google-exeperience-Device</h3>
+        <p>An android device that requires you to log in to your google account to
+             unloack upon first bootup.</p>
+      </div>
+     </div>
+     </div>
+</section>
+
+<!-- androidid
+    ===============================================-->
+<section id="androidid">
+  <div class="page-header">
+    <h1>ANDROID_ID<small>Are you android enough?</small></h1>
+  </div>
+  <h2>Are you Android Enough?</h2>
+  <div class="row">
+    <div class="span8">
+        <h3>ANDROID_ID</h3>
+      <p>Yes, there really is a function that determines if your device sis android enough.
+          Shh, do not tell Bezos.</p>
+       <p>How it work is that there is a little function in Power.Settings that gets cyrpto-generated
+           the first time you power the device on and that wil act as a seed with your google 
+           account after you have unlocked the device to be used as a seed to produce the
+           ANDROID_ID.</p>
+           <p>This means that non-google-experience devices do not have a non-null ANDROID_ID. 
+               That means we cannot fully rely on an ANDROID_ID to produce our unique device ID.
+               Thus what is next that we could use?</p>
+    </div>
+     </div>
+ 
+</section>
+<!-- deviceid
+    ===============================================-->
+<section id="deviceid">
+  <div class="page-header">
+    <h1>deviceID <small>We think we are an android device, are we?</small></h1>
+  </div>
+  <h2>deviceID, a telephony ID</h2>
+  <div class="row">
+    <div class="span8">
+        <h3>deviceID</h3>
+      <p>Next up we have a TelephonyManager deviceID that we might use.
+          You may have guessed the problem already. If its not a telephone it
+          does not have a value for deviceID under the TelephonyManager class.</p>
+       <p>Now you could try to use both but that would leave out all those
+           non-google-devices that may be non phonessuch as a tablet. 
+           Thus, we have left to use that unique always there UUID.</p>
+           <p>In the emulator deviceID is null and you wold expect that as 
+               deviceID is actually the IMEI</p>
+         
+    </div>
+  </div>
+    
+</section>
+<!-- uuid
+    ===============================================-->
+<section id="uuid">
+  <div class="page-header">
+    <h1>UUID <small>A Linux/Unix id for every linux/unix device.</small></h1>
+  </div>
+  <h2>Whose UUID?</h2>
+  <div class="row">
+    <div class="span8">
+        <h3>Everybody UUIDs</h3>
+      <p>As I stated before every UNix/Linux device has an UUID. That number is computed
+          using the network interface address and number of 100-nanosecond intervals since October 15, 1582 at 00:00:00
+          as both seeds to compute that UUID number.
+          </p>
+      <p>And guess what? That UUID is unique not only across the DVM instances, 
+          please do not hash it as that is not unique over Dalvik VM instances, its the 
+          same wehn you factory reset the device. But guess what?</p>
+       <p>That is right there is one case where you will get a new UUID but  have the
+           same device. That occurs when you put a brand new different ROM in 
+           the android by flashing the ROM</p>
+   
+     </div>
+     </div>
+    
+</section>
+
+<!-- solution
+    ===============================================-->
+<section id="solution">
+  <div class="page-header">
+    <h1>the Solution <small>a solution.</small></h1>
+  </div>
+  <h2>Show us code</h2>
+  <div class="row">
+    <div class="span8">
+        <h3>An UUId factory</h3>
+    <pre class="prettyprint
+     linenums">
+     public class AndroidDeviceID {
+
+    protected static final String PREFS_FILE = "device_id.xml";
+    protected static final String PREFS_DEVICE_ID = "device_id";
+
+    protected static UUID uuid;
+
+    public AndroidDeviceID(Context context) {
+        
+        if( uuid ==null ) {
+            synchronized (AndroidDeviceID.class) {
+                /**
+                 * if uuid is now null than we should read in the preferences to see if they
+                 * were set.
+                 */
+                if( uuid == null) {
+                    final SharedPreferences prefs = context.getSharedPreferences( PREFS_FILE, 0);
+                    final String id = prefs.getString(PREFS_DEVICE_ID, null );
+                    
+                    if (id != null) {
+                        // Use the ids previously computed and stored in the prefs file
+                        uuid = UUID.fromString(id);
+
+                    }else{
+                        uuid = UUID.randomUUID();
+                         // Write the value out to the prefs file so it persists
+                        prefs.edit().putString(PREFS_DEVICE_ID, uuid.toString() ).commit();
+                    }
+                }
+            }
+        }
+    }
+    public static UUID getUuid() {
+        return uuid;
+    }
+}
+     </pre>
+     <p>We just check to see if UUID waqs stored in preferences beforre and if not than
+         we store <strong>a randomized UUID</strong> as a file that SharePerefences will read
+         upon starting the application again.
+           A word of cuation most Mobile Operators frwon and out-right forbid applpicaiton developers to
+           store the IMEI in unencrypted form anywya and all the sample code over at stackoverflow 
+           has that error in it so do not use it!</p>
+      </div>
+    
+    </div>
+</section>
+     <!-- Footer
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>The user-interface design elements are borrowed from <a href="https://github.com/twitter/bootstrap" target="_blank">Twitter's Bootstrap Examples</a>. Modifications are Fred Grott's and Coprighted 2012.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      </footer>
+
+    </div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../../twitterbswip2.0/js/jquery-1.7.1.min.js"></script>
+    <script src="../../twitterbswip2.0/google-code-prettify/prettify.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-transition.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-alert.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-modal.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-dropdown.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-scrollspy.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-tab.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-tooltip.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-popover.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-button.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-collapse.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-carousel.js"></script>
+    <script src="../../twitterbswip2.0/js/bootstrap-typeahead.js"></script>
+    <script src="../../twitterbswip2.0/js/application.js"></script>
+    
+  </body>
+</html>
