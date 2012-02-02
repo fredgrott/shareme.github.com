@@ -2,76 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Articles-Agile Android Development</title>
+    <title>Articles, Agile Android Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Android Developer Articles.">
+    <meta name="description" content="Fred Grott, Agile Android Devlopment in Greater Chicago-Land for startups and other firms.">
     <meta name="author" content="fred Grott">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
-    <link href="twitterbswip2.0/css/bootstrap.css" rel="stylesheet">
-    <link href="twitterbswip2.0/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="twitterbswip2.0/css/docs.css" rel="stylesheet">
-    <link href="twitterbswip2.0/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="stylesheet/less" href="twitterbswip2.0/less/bootstrap.less">
-<script src="twitterbswip2.0/js/less-1.2.1.js"></script>
-
-<!-- CSS Over-rides go here
     
-     On the orig TwitterBSwip2.0 Doc  example the solid gradient topnav bar does
-     not seem to match up with rest of visual flow.
-     
-     My thinking is a transparent background with the top and bottom flanked by
-     thick hr''s with horizontal gradients and the href's of navbar have glyphs 
-     associated with each one.
-    -->
-<style>
-.marketing-byline {
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="twitterbootstrap2.0/js/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles 
+        Minor change from the way in twbs20 docs style we move the gcprettify js from
+        bottom to top and we change the ordering of css so that our over-rides go in
+        the application.css for site wide over-rides
+        -->
+    <link href="twitterbootstrap2.0/css/bootstrap.css" rel="stylesheet">
+    <link href="twitterbootstrap2.0/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="twitterbootstrap2.0/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="twitterbootstrap2.0/css/agile.css" rel="stylesheet">
+    <link rel="stylesheet/less" href="twitterbootstrap2.0/less/bootstrap.less">
+<script src="twitterbootstrap2.0/js/less-1.2.1.js"></script>
+<script src="twitterbootstrap2.0/js/google-code-prettify/prettify.js"></script>
+<script src="twitterbootstrap2.0/js/googleanalytics.js"></script>
+<script src="twitterbootstrap2.0/js/tynt.js"></script> 
+
+
+<!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="twitterbootstrap2.0ico/favicon.ico">
+    <link rel="apple-touch-icon" href="twitterbootstrap2.0/ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="twitterbootstrap2.0/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="twitterbootstrap2.0/ico/apple-touch-icon-114x114.png">
   
-  color: #404040 ;
-  
-}
+</head>
 
-.prettyprint {
-  display: block;
-  width: auto;
-  height: auto;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 10px;  
-  background-color: #f9f7f9;
-  border: 1px solid #C8C8C8;
-}
-
-
-
-
-hr.soften {
-  height: 15px;
-  margin: 54px 0;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1.8), rgba(0,0,0,0)); 
-  border: 0;
-}
-
-body{
-     padding-top: 0px;
-}
-
-</style>
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="twitterbswip2.0/ico/favicon.ico">
-    <link rel="apple-touch-icon" href="twitterbswip2.0/ico/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="twitterbswip2.0/ico/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="twitterbswip2.0/ico/apple-touch-icon-114x114.png">
-  </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50" onload="prettyPrint()">
       
@@ -82,7 +45,7 @@ body{
               
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="./index.html">Fred Grott(shareme)</a>
+          <a class="brand" href="./index.html">Fred Grott(Agile Android Development)</a>
           <ul class="nav">
             <li class="">
               <a href="./index.html">Overview</a>
@@ -120,28 +83,16 @@ body{
           <div class="row">
               <div class="span12 columns">
             <p>Amazing applications come from a balance between design and  agile
-                devlopment.</p>
+                development a sort of ying and yang to enlightenment.</p>
             </div>
             </div>
             
           </div>
-
-          <ul class="quick-links">
-            <li>
-              <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=shareme&repo=shareme.github.com&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="114px" height="20px"></iframe>
-            </li>
-            <li>
-              <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=shareme&repo=shareme.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
-            </li>
-            <li>
-              <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=shareme&repo=shareme.github.com&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
-            </li>
-          </ul>
-          <div class="row">
+<div class="row">
                 <div class="span12 columns">
                     <!-- AddThis Button BEGIN -->
                     <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-<div class="addthis_toolbox addthis_default_style ">
+<div class="center"><div class="addthis_toolbox addthis_default_style ">
 <a class="addthis_button_preferred_1"></a><!-- formspring -->
 <a class="addthis_button_preferred_2"></a><!-- facebook -->
 <a class="addthis_button_preferred_3"></a><!-- twitter tweet this -->
@@ -155,7 +106,7 @@ body{
 <a class="addthis_button_google_plusone"  g:plusone:size='medium' ></a><!-- g-plus non badge just  1+ counts -->
 <a class="addthis_button_compact"></a>
 <a class="addthis_counter addthis_bubble_style"></a>
-</div>
+</div></div>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ea7e18b3e78fcd8"></script>
 <script type="text/javascript">
      var addthis_config = {
@@ -170,16 +121,28 @@ body{
                  </div>
             </div>
           
+          <ul class="quick-links">
+            <li>
+              <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=shareme&repo=shareme.github.com&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="114px" height="20px"></iframe>
+            </li>
+            <li>
+              <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=shareme&repo=shareme.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+            </li>
+            <li>
+              <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=shareme&repo=shareme.github.com&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+            </li>
+          </ul>
+          
         </header>
 
         <hr class="soften">
 
         <div class="marketing">
           <h1>Designed for that evasive great user experience.</h1>
-          <p class="marketing-byline">Need reasons to askf for Android Application Development from Fred Grott? Look no further.</p>
+          <p class="marketing-byline">Need reasons to ask for Android Application Development from Fred Grott? Look no further.</p>
           <div class="row">
             <div class="span6">
-              <img class="bs-icon" src="twitterbswip2.0/img/glyphicons_042_group.png">
+              <img class="bs-icon" src="twitterbootstrap2.0/img/glyphicons/glyphicons_042_group.png">
               
                 <dl>
         <dt>Beginning Android</dt>
@@ -193,17 +156,17 @@ body{
       </dl>
             </div>
             <div class="span6">
-              <img class="bs-icon" src="twitterbswip2.0/img/glyphicons_079_podium.png">
+              <img class="bs-icon" src="twitterbootstrap2.0/img/glyphicons/glyphicons_079_podium.png">
               <h2>Intermediate Android Development</h2>
               <p>An article series foused on the intermediate android development level.</p>
               <a href="articles/intermediate/contrarianviewdeviceid.html"><dt>Contrarian View, DeviceID</dt></a>
-              <dd>A Contrarian View on DeviceID on computing the iD  in android applications</dd>
+              <dd>A Contrarian View on DeviceID on computing the ID  in android applications</dd>
             </div>
             
           </div><!--/row-->
           <div class="row">
             <div class="span6">
-              <img class="bs-icon" src="twitterbswip2.0/img/glyphicons_042_group.png">
+              <img class="bs-icon" src="twitterbootstrap2.0/img/glyphicons/glyphicons_042_group.png">
               <h2>Advanced Android Development</h2>
               <p>An article series focusing on advanced android development..</p>
               
@@ -223,34 +186,31 @@ body{
       ================================================== -->
       <footer class="footer">
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>The user-interface design elements are borrowed from <a href="https://github.com/twitter/bootstrap" target="_blank">Twitter's Bootstrap Examples</a>. Modifications are Fred Grott's and Coprighted 2012.</p>
-        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>The user-interface design elements are borrowed from <a href="https://github.com/twitter/bootstrap" target="_blank">Twitter's Bootstrap Examples</a>. Modifications are Fred Grott's and Coprighted 2012 under the Apache 2.0 License. No pizza, cheeseburgers, and or coke were harmed in production of this site or its content.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.Please share and give back.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Grow the design/art community by sharing designs/techniques with others.</p>
       </footer>
 
     </div><!-- /container -->
-
-
-
-    <!-- Le javascript
+   <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="twitterbswip2.0/js/jquery-1.7.1.min.js"></script>
-    <script src="twitterbswip2.0/google-code-prettify/prettify.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-transition.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-alert.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-modal.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-dropdown.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-scrollspy.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-tab.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-tooltip.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-popover.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-button.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-collapse.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-carousel.js"></script>
-    <script src="twitterbswip2.0/js/bootstrap-typeahead.js"></script>
-    <script src="twitterbswip2.0/js/application.js"></script>
+    
+    <script src="twitterbootstrap2.0/js/jquery.js"></script>
+    <script src="twitterbootstrap2.0/js/google-code-prettify/prettify.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-transition.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-alert.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-modal.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-dropdown.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-scrollspy.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-tab.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-tooltip.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-popover.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-button.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-collapse.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-carousel.js"></script>
+    <script src="twitterbootstrap2.0/js/bootstrap-typeahead.js"></script>
+    <script src="twitterbootstrap2.0/js/application.js"></script>
     
   </body>
 </html>
