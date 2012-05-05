@@ -1,0 +1,31 @@
+{% comment %}<!--
+The link_bar is a link image bar generation helper
+Usage:
+   1)define an array in _confgi.yml of the form:
+                      arrayName:
+                                 name:
+                                 url:
+                                 imagefile:
+                                            
+      2)make sure you assets array is defined
+                   assets:
+                            img: assets/img
+                            
+      3) assign link_bar_array
+
+     4) include link_bar
+     
+     <ul>
+          {% assign link_bar_array = site.followme %}
+          {% include link_bar %}
+       </ul>
+
+
+
+-->{% endcomment %}
+
+{% for node in link_bar_array %}
+    
+       <a href="{{node[1]}}" title="{{node[0]}}" target="_blank"><img src="{{ site.base_url }}{{ site.assets.img }}/{{node[0]}}.png"/></a>
+ {% endfor %}
+ {% assign link_bar_array = nil %} 
