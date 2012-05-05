@@ -1,0 +1,27 @@
+<div class="span8 columns">
+                    <!-- AddThis Button BEGIN -->
+                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<div class="center"><div class="addthis_toolbox addthis_default_style " >
+<a class="addthis_button_preferred_1"></a><!-- formspring -->
+<a class="addthis_button_preferred_2"></a><!-- facebook -->
+<a class="addthis_button_preferred_3"></a><!-- twitter tweet this -->
+<a class="addthis_button_preferred_4"></a><!-- Email this -->
+<a class="addthis_button_dzone"></a><!-- Dzone -->
+<a class="addthis_button_linkedin"></a><!-- Linkedin -->
+<a class="addthis_button_stumbleupon"></a><!-- StumbleUpon -->
+<a class="addthis_button_hackernews"></a><!-- HackerNews -->
+<a class="addthis_button_digg"></a><!-- Digg -->
+<a class="addthis_button_delicious"></a><!-- delicous -->
+<a class="addthis_button_reddit"></a><!-- reddit -->
+<a class="addthis_button_google_plusone"  g:plusone:size='medium' ></a><!-- g-plus non badge just  1+ counts -->
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div></div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid={( site.addthis.pub_id }}"></script>
+<script type="text/javascript">
+     var addthis_config = {
+        data_ga_property: '{{ site.JB.analytics.google.tracking_id }}'
+     };
+</script>
+<!-- AddThis Button END -->
+  </div>

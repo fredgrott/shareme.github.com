@@ -1,0 +1,12 @@
+---
+layout: page
+title: Articles
+header: Articles
+group: navigation
+---
+<div id="articles" class="well">
+          {% for post in site.categories.articles %}
+               <h2><a href="{{ post.url {{" rel="bookmark" title=Pernament link to ">{{ post.title }}</a></h2>
+               <h5><time>{{ post.date | date: '%B' }} {{ post.date | date: '%e' }}, {{ post.date | date: '%Y' }}</time></h5>
+           {% endfor %}
+ </div>
