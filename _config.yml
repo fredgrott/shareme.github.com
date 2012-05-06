@@ -17,8 +17,8 @@ tagline:  Mobile and Sever Hacking
 #     <a href="{{ site.base_url }}rest of url with no added pre /
 # those ahrefs  with a {{ node.url}} DO NOT include a {{ site.base_url }} prefix}
 base_url: /
-# for search sit.url is used
-url: http://shareme.github.com
+# for search site.my_url is used
+my_url: http://shareme.github.com
 keywords: Android, JBoss, Spring, Hibernate, iPhone, Eclipse IDE, Eclipse, NetBeans, RubyOnRails, Django, Python, Ruby,
                      PHP, Symfony2, Groovy, Gradle, Gant, Grails, Mobile, Java, JavaME, Symbian, JavaEE, Windows Phone,
                      Blackberry RIM, Blackberry, Scala, HTML5, PhoneGap, JQuery, Zepto, Zurby, Jenkins CI, Git, Hg, Mercurial,
