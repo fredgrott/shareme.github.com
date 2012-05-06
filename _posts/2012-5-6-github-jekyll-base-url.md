@@ -38,16 +38,15 @@ as the base url.
 
 Remember, hrefs are not labeled as absolute or relative but in your gh-pages github site:
 
-<ul>
-<li>Absolute Links hrefs</li>
+Absolute Links hrefs
        <ul>
               <li>Links that are outbound to other sites</li>
               <li>Links in your xml feed pages</li>
         </ul>
-<li>Relative links hrefs</lI>
+Relative links hrefs
          <ul>
-              <li>inside your website links to other pages in the site<;i>
+              <li>inside your website links to other pages in the site</li>
           </ul>
-</ul>
+
 
 So hopefully this clears up the confusion.
