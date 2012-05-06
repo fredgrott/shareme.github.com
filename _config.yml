@@ -72,29 +72,7 @@ tags_path: /tags.html
 # be careful https has to be single quote escaped and you get no
 # warning in your IDE usually, and the warning Jekyll gives will not
 # point to the original line of the error 
-follow:
-  angellist: http://angel.co/fred-grott
-  delicious: http://www.delicious.com/shareme
-  deviantart: http://shareme.deviantart.com/
-  dribbble: http://dribbble.com/FredGrott
-  facebook: https://www.facebook.com/fred.grott?ref=tn_tnmn
-  forrst: https://forrst.com/people/fredgrott
-  googleplus: https://plus.google.com/u/0/114301140286672625486/about
-  linkedin: http://www.linkedin.com/in/shareme
-  quora: http://www.quora.com/Fred-Grott
-  reddit: http://www.reddit.com/user/fredgrott/
-  stackoverflow: http://stackoverflow.com/users/237740/fred-grott
-  twitter: 'https://twitter.com/#!/fredgrott'
-  youtube: http://www.youtube.com/user/memine44?feature=mhee
-poweredby:
-  eclipse: http://www.eclipse.org
-  github: http://github.com
-  hacker: http://www.fsf.org
-  jekyll: 'https://github.com/mojombo/jekyll'
-repos:
-  github:  'http://github.com/shareme'
-  bitbucket: 'http://bitbucket.org/fredgrott'
-  
+
   
 # The secret to manipulating Jekyll and Liquid 
 # to do your bidding is to use metadata to 
