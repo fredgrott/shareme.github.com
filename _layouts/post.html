@@ -29,7 +29,13 @@ layout: defaultme
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
       </ul>
-      
+      {% unless page.tags == empty %}
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include tags_list %}
+    </ul>
+  {% endunless %}  
   
     </div>
     
