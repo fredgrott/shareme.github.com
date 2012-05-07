@@ -18,7 +18,7 @@ tagline:  Mobile and Sever Hacking
 # those ahrefs  with a {{ node.url}} DO NOT include a {{ site.base_url }} prefix}
 base_url: /
 # for search site.my_url is used
-# url: is a setting if youwere reomting hosting itself which is not set when you use github ghpages by you
+# url: is a setting if you were remoting hosting itself which is not set when you use github ghpages by you
 my_url: http://shareme.github.com
 keywords: Android, JBoss, Spring, Hibernate, iPhone, Eclipse IDE, Eclipse, NetBeans, RubyOnRails, Django, Python, Ruby,
                      PHP, Symfony2, Groovy, Gradle, Gant, Grails, Mobile, Java, JavaME, Symbian, JavaEE, Windows Phone,
