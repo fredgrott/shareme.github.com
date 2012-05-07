@@ -18,13 +18,13 @@ layout: defaultme
     <div class="pagination">
       <ul>
       {% if page.previous %}
-        <li class="prev"><a href="{{ site.base_url }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        <li class="prev"><a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
       {% else %}
         <li class="prev disabled"><a>&larr; Previous</a></li>
       {% endif %}
-        <li><a href="{{ site.base_url }}{{ site.archive_path }}">Archive</a></li>
+        <li><a href="{{ site.archive_path }}">Archive</a></li>
       {% if page.next %}
-        <li class="next"><a href="{{ site.base_url  }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
