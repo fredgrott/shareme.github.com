@@ -958,5 +958,6 @@ form.well {
 }
 
 code {
-    color: #191970;
+    color: #101010 ;
+    font-weight: bolder;
 }
