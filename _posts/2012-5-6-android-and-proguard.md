@@ -46,13 +46,14 @@ and by:
 
 The next step is to add some stuff for the libraries you are using:
 
-<code>
+<code><pre>
 # admob, uncomment if using admob:
   -keep public class com.admob.android.ads.** {*;}
  # google analytics, uncomment to use:
  -keep class com.google.android.apps.analytics.PipelinedRequester$Callbacks
  # google inapp billing, uncomment to use:
   -keep class com.android.vending.billing.**
+</pre>
 </code>
 
 Obviously, if you are using other stuff than you need to add it but you get the idea. The benefit of the 
