@@ -1,1 +1,0 @@
-{% if site.repos.github %}<a href="{{ site.repos.github }}" target="_blank"><img src="{{ site.base_url }}assets/img/GithubIcon.png"/></a>{% endif %}{% if site.repos.bitbucket %}<a href="{{ site.repos.bitbucket }}" target="_blank"><img src="{{ site.base_url }}assets/img/bitbucket.png"/></a>{% endif %}
