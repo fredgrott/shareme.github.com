@@ -1,0 +1,1 @@
+<section class="coderwall" data-coderwall-username="{{ site.author.coderwall }}" data-coderwall-orientation="vertical"></section>
