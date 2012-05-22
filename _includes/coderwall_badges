@@ -5,10 +5,10 @@
   </script>
   <script>
     new CoderwallWidget({
-      'color':'yourtextcolor',
-      'backgroundColor':'yourbgcolor',
+      'color':'444444',
+      'backgroundColor':'ffffff',
       'width':245,
-      'height':80
+      'height':100
     });
   </script>
 </div>
