@@ -1,1 +1,14 @@
-<section class="coderwall" data-coderwall-username="{{ site.author.coderwall }}" data-coderwall-orientation="vertical"></section>
+<div id="coderwall_badges">
+  <script
+    type="text/javascript"
+    src="http://coderwall-widget.appspot.com/coderwallbadges.js/shareme">
+  </script>
+  <script>
+    new CoderwallWidget({
+      'color':'yourtextcolor',
+      'backgroundColor':'yourbgcolor',
+      'width':245,
+      'height':80
+    });
+  </script>
+</div>
