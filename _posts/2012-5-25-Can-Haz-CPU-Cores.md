@@ -4,7 +4,7 @@ title: Can haz CPU Cores
 tagline: All our CPUS belong to Android
 description: count number of CPU cores
 categories: articles
-tags: [android, java, linux]
+tags: [android, java, linux, unix, cpu]
 ---
 
 As we adjust to having a large market share of devices with more than one 
