@@ -4,7 +4,7 @@ title: The Need for Emulator Speed
 tagline: can haz fast
 description: how toe speed up the android emulator in the sdk
 categories: articles
-tags: [android, java, emulator, SDK, avd, mobile]
+tags: [android, java, emulator, SDK, avd, mobile, AVD]
 ---
 
 Want a real simple technique to speed up the emulator?  No really.
