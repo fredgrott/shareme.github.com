@@ -70,7 +70,7 @@ Some changes you might notice with this Goolge IO is that local GTUG chapters ar
 partening with other groups to allow develoeprs to go to those locations to 
 view the  IO events being live rebroadcast if you were not lucky enough to get a ticket to
 the IO event itself. If you have not joined one of these groups, I just got my invite to
-attend the IO reboradcast in the Chicago area due to my membership in Chicago GUTG
+attend the IO rebroadcast in the Chicago area due to my membership in Chicago GTUG
  and ChicagoAndroid, this would be the time to join one  and attend their Google IO 
  rebroadcast live event. The easy way to do that is go to Meetup dot com and 
  type in GTUG android and your city, state and zipcode and it will find one close to 
