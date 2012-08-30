@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Agiel Android Build System
+title: Agile Android Build System
 tagline: can haz agile androids
 description: goals of an agile android build system
 categories: blog
