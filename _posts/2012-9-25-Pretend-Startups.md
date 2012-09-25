@@ -28,7 +28,7 @@ for even fullfilling the stock options promise as its an LLC which no
 Angel or VC will fund in current form thus the stock potion promise is not
 worth the paper its printed on.
 
-What the startup should have doen is allow the questioning developer morph it
+What the startup should have done is allow the questioning developer morph it
 back into what it should have been a project contract to rewrite the 
 android native application at freelance rates. It would be expensive 
 but the android native applciation than would not be buggy as hell and have a 
