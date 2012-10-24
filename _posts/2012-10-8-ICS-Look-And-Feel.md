@@ -9,7 +9,7 @@ tags: [android, java]
 
 Want to know a secret?  come real close...
 The ICS UI look and feel has been back ported to 2.1 to almost 
-96%.  The reason why we did not notice is that its spread over about 
+96 percent.  The reason why we did not notice is that its spread over about 
 20 plus library frameworks.
 
 Thus, I am putting togther a compact collection of these libraries as 
