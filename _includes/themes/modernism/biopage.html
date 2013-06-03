@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col col-lg-12">
+        <div class="well well-page-header page-header">
+         <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+        </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col col-lg-5">
+    <div class="biopage-menu">
+          <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+          {% assign pages_list = site.pages %}
+            {% assign group = 'bio' %}
+            {% include JB/pages_list %}
+          </ul>
+          </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col col-lg-12">
+    <div class="well well-page-content page-content">
+        {{ content }}
+    </div>
+  </div>
+</div>

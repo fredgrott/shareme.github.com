@@ -1,0 +1,856 @@
+/*
+ * MS's modernism color palette is somewhat lacking..
+ * Thus a better color palette.
+ * 
+ * One of the main flaws of copied flat design is that 
+ * no one gets contrasts right to better readability,ie communication.
+ * Thus, this palette has more than the default wp or MS colors.
+ */
+
+/*
+ * By Web Color Name, backgrounds
+ */
+
+.aliceblue-bg{
+    background-color: #F0F8FF;
+}
+.antiquewhite-bg {
+    background-color: #FAEBD7;
+}
+.aqua-bg {
+    background-color: #00FFFF;
+}
+.aquamarine-bg{
+    background-color: #7FFFD4;
+}
+.azure-bg {
+    background-color: #F0FFFF;
+}
+.beige-bg{
+    background-color: #F5F5DC;
+}
+.bisque-bg {
+    background-color: #FFE4C4;
+}
+.black-bg {
+    background-color: #000000;
+}
+.blanchedalmond-bg{
+    background-color: #FFEBCD;
+}
+.blue-bg{
+    background-color: #0000FF;
+}
+.blueviolet-bg{
+    background-color: #8A2BE2;
+}
+.brown-bg{
+    background-color: #A52A2A;
+}
+.burlywood-bg{
+    background-color: #DEB887;
+}
+.cadetblue-bg {
+    background-color: #5F9EA0;
+}
+.chartreuse-bg{
+    background-color: #7FFF00;
+}
+.chocolate-bg{
+    background-color: #D2691E;
+}
+.coral-bg{
+    background-color: #FF7F50;
+}
+.cornflowerblue-bg {
+    background-color: #6495ED;
+}
+.cornsilk-bg{
+    background-color: #FFF8DC;
+}
+.crimson-bg{
+    background-color: #DC143C;
+}
+.cyan-bg{
+    background-color: #00FFFF;
+}
+.darkblue-bg{
+    background-color: #00008B;
+}
+.darkcyan-bg{
+    background-color: #008B8B;
+}
+.darkgoldenrod-bg{
+    background-color: #B8860B;
+}
+.darkgray-bg{
+    background-color: #A9A9A9;
+}
+.darkgreen-bg{
+    background-color: #006400;
+}
+.darkkhaki-bg{
+    background-color: #BDB76B;
+}
+.darkmagenta-bg{
+    background-color: #8B008B;
+}
+.darkolivegreen-bg{
+    background-color: #556B2F;
+}
+.darkorange-bg{
+    background-color: #FF8C00;
+}
+.darkorchid-bg{
+    background-color: #9932CC;
+}
+.darkred-bg{
+    background-color: #8B0000;
+}
+.darksalmon-bg{
+    background-color: #E9967A;
+}
+.darkseagreen-bg{
+    background-color: #8FBC8F;
+}
+.darkslateblue-bg{
+    background-color: #483D8B;
+}
+.darkslategray-bg{
+    background-color: #2F4F4F;
+}
+.darkturquoise-bg{
+    background-color: #00CED1;
+}
+.darkviolet-bg{
+    background-color: #9400D3;
+}
+.deeppink-bg{
+    background-color: #FF1493;
+}
+.deepskyblue-bg{
+    background-color: #00BFFF;
+}
+.dimgray-bg{
+    background-color: #696969;
+}
+.dodgerblue-bg{
+    background-color: #1E90FF;
+}
+.firebrick-bg{
+    background-color: #B22222;
+}
+.floralwhite-bg{
+    background-color: #FFFAF0;
+}
+.forestgreen-bg{
+    background-color:#228B22;
+}
+.fuchsia-bg{
+    background-color: #FF00FF;
+}
+.gainsboro-bg{
+    background-color: #DCDCDC;
+}
+.ghostwhite-bg{
+    background-color: #F8F8FF;
+}
+.gold-bg{
+    background-color: #FFD700;
+}
+.goldenrod-bg{
+    background-color: #DAA520;
+}
+.gray-bg{
+    background-color: #808080;
+}
+.green-bg{
+    background-color: #008000;
+}
+.greenyellow-bg{
+    background-color: #ADFF2F;
+}
+.honeydew-bg{
+    background-color: #F0FFF0;
+}
+.hotpink-bg{
+    background-color: #FF69B4;
+}
+.indianared-bg{
+    background-color:#CD5C5C;
+}
+.indigo-bg{
+    background-color: #4B0082;
+}
+.ivory-bg {
+    background-color: #FFFFF0;
+}
+.khaki-bg {
+    background-color: #F0E68C;
+}
+.lavender-bg{
+    background-color: #E6E6FA;
+}
+.lavenderblush-bg{
+    background-color: #FFF0F5;
+}
+.lawngreen-bg{
+    background-color: #7CFC00;
+}
+.lemonchiffon-bg{
+    background-color: #FFFACD;
+}
+.lightblue-bg{
+    background-color: #ADD8E6;
+}
+.lightcoral-bg{
+    background-color: #F08080;
+}
+.lightcyan-bg{
+    background-color: #E0FFFF;
+}
+.lightgoldenrodyellow-bg{
+    background-color: #FAFAD2;
+}
+.lightgray-bg{
+    background-color: #D3D3D3;
+}
+.lightgreen-bg{
+    background-color: #90EE90;
+}
+.lightpink-bg{
+    background-color: #FFB6C1;
+}
+.lightsalmon-bg{
+    background-color: #FFA07A;
+}
+.lightseagreen-bg{
+    background-color: #20B2AA;
+}
+.lightskyblue-bg{
+    background-color: #87CEFA;
+}
+.lightslategray-bg{
+    background-color: #778899;
+}
+.lightsteelblue-bg{
+    background-color: #B0C4DE;
+}
+.lightyellow-bg{
+    background-color: #FFFFE0;
+}
+.lime-bg{
+    background-color: #00FF00;
+}
+.limegreen-bg{
+    background-color: #32CD32;
+}
+.linen-bg{
+    background-color: #FAF0E6;
+}
+.magenta-bg{
+    background-color: #FF00FF;
+}
+.maroon-bg{
+    background-color: #800000;
+}
+.mediumaquamarine-bg{
+    background-color:#66CDAA;
+}
+.mediumblue-bg{
+    background-color: #0000CD;
+}
+.mediumorchid-bg{
+    background-color: #BA55D3;
+}
+.mediumpurple-bg{
+    background-color: #9370DB;
+}
+.mediumseagreen-bg{
+    background-color: #3CB371;
+}
+.mediumslateblue-bg{
+    background-color: #7B68EE;
+}
+.mediumspringgreen-bg{
+    background-color: #00FA9A;
+}
+.mediumturquoise-bg{
+    background-color: #48D1CC;
+}
+.mediumvioletred-bg{
+    background-color: #C71585;
+}
+.midnightblue-bg{
+    background-color: #191970;
+}
+.mintcream-bg{
+    background-color: #F5FFFA;
+}
+.mistyrose-bg{
+    background-color: #FFE4E1;
+}
+.moccasin-bg{
+    background-color: #FFE4B5;
+}
+.navajowhite-bg{
+    background-color: #FFDEAD;
+}
+.navy-bg{
+    background-color: #000080;
+}
+.oldlace-bg{
+    background-color: #FDF5E6;
+}
+.olive-bg{
+    background-color: #808000;
+}
+.olivedrab-bg{
+    background-color: #6B8E23;
+}
+.orange-bg{
+    background-color: #FFA500;
+}
+.orangered-bg{
+    background-color: #FF4500;
+}
+.orchid-bg{
+    background-color: #DA70D6;
+}
+.palegoldenrod-bg{
+    background-color: #EEE8AA;
+}
+.palegreen-bg{
+    background-color: #98FB98; 
+}
+.paleturquoise-bg{
+    background-color: #AFEEEE;
+}
+.palevioletred-bg{
+    background-color: #DB7093;
+}
+.papayawhip-bg{
+    background-color: #FFEFD5;
+}
+.peachpuff-bg{
+    background-color: #FFDAB9;
+}
+.peru-bg{
+    background-color: #CD853F;
+}
+.pink-bg{
+    background-color: #FFC0CB;
+}
+.plum-bg{
+    background-color: #DDA0DD;
+}
+.powderblue-bg{
+    background-color: #B0E0E6;
+}
+.purple-bg{
+    background-color: #800080;
+}
+.red-bg{
+    background-color: #FF0000;
+}
+.rosybrown-bg{
+    background-color: #BC8F8F;
+}
+.royalblue-bg{
+    background-color: #4169E1;
+}
+.saddlebrown-bg{
+    background-color: #8B4513;
+}
+.salmon-bg{
+    background-color: #FA8072;
+}
+.sandybrown-bg{
+    background-color: #F4A460;
+}
+.seagreen-bg{
+    background-color: #2E8B57;
+}
+.seashell-bg{
+    background-color: #FFF5EE;
+}
+.sienna-bg{
+    background-color: #A0522D;
+}
+.silver-bg{
+    background-color: #C0C0C0;
+}
+.skyblue-bg{
+    background-color: #87CEEB;
+}
+.slateblue-bg{
+    background-color: #6A5ACD;
+}
+.slategray-bg{
+    background-color: #708090;
+}
+.snow-bg{
+    background-color: #FFFAFA;
+}
+.springgreen-bg{
+    background-color: #00FF7F;
+}
+.steelblue-bg{
+    background-color: #4682B4;
+}
+.tan-bg{
+    background-color: #D2B48C;
+}
+.teal-bg{
+    background-color: #008080;
+}
+.thistle-bg{
+    background-color: #D8BFD8;
+}
+.tomato-bg{
+    background-color: #FF6347;
+}
+.turquoise-bg{
+    background-color: #40E0D0;
+}
+.violet-bg{
+    background-color: #EE82EE;
+}
+.wheat-bg{
+    background-color: #F5DEB3;
+}
+.white-bg{
+    background-color: #FFFFFF;
+}
+.whitesmoke-bg{
+    background-color: #F5F5F5;
+}
+.yellow-bg{
+    background-color: #FFFF00;
+}
+.yellowgreen-bg{
+    background-color: #9ACD32;
+}
+/*
+ * by web color names, borders
+ */
+.aliceblue-border{
+    border: 1px solid #F0F8FF;
+}
+.antiquewhite-border {
+    border: 1px solid #FAEBD7;
+}
+.aqua-border {
+    border: 1px solid #00FFFF;
+}
+.aquamarine-border{
+    border: 1px solid #7FFFD4;
+}
+.azure-border {
+    border: 1px solid #F0FFFF;
+}
+.beige-border{
+    border: 1px solid #F5F5DC;
+}
+.bisque-border {
+    border: 1px solid #FFE4C4;
+}
+.black-border {
+    border: 1px solid #000000;
+}
+.blanchedalmond-border{
+    border: 1px solid #FFEBCD;
+}
+.blue-border{
+    border: 1px solid #0000FF;
+}
+.blueviolet-border{
+    border: 1px solid #8A2BE2;
+}
+.brown-border{
+    border: 1px solid #A52A2A;
+}
+.burlywood-border{
+    border: 1px solid #DEB887;
+}
+.cadetblue-border {
+    border: 1px solid #5F9EA0;
+}
+.chartreuse-border{
+    border: 1px solid #7FFF00;
+}
+.chocolate-border{
+    border: 1px solid #D2691E;
+}
+.coral-border{
+    border: 1px solid #FF7F50;
+}
+.cornflowerblue-border {
+    border: 1px solid #6495ED;
+}
+.cornsilk-border{
+    border: 1px solid #FFF8DC;
+}
+.crimson-border{
+    border: 1px solid #DC143C;
+}
+.cyan-border{
+    border: 1px solid #00FFFF;
+}
+.darkblue-border{
+    border: 1px solid #00008B;
+}
+.darkcyan-border{
+    border: 1px solid #008B8B;
+}
+.darkgoldenrod-border{
+    border: 1px solid #B8860B;
+}
+.darkgray-border{
+    border: 1px solid #A9A9A9;
+}
+.darkgreen-border{
+    border: 1px solid #006400;
+}
+.darkkhaki-border{
+    border: 1px solid #BDB76B;
+}
+.darkmagenta-border{
+    border: 1px solid #8B008B;
+}
+.darkolivegreen-border{
+    border: 1px solid #556B2F;
+}
+.darkorange-border{
+    border: 1px solid #FF8C00;
+}
+.darkorchid-border{
+    border: 1px solid #9932CC;
+}
+.darkred-border{
+    border: 1px solid #8B0000;
+}
+.darksalmon-border{
+    border: 1px solid #E9967A;
+}
+.darkseagreen-border{
+    border: 1px solid #8FBC8F;
+}
+.darkslateblue-border{
+    border: 1px solid #483D8B;
+}
+.darkslategray-border{
+    background-color: #2F4F4F;
+}
+.darkturquoise-border{
+    background-color: #00CED1;
+}
+.darkviolet-border{
+    border: 1px solid #9400D3;
+}
+.deeppink-border{
+    border: 1px solid #FF1493;
+}
+.deepskyblue-border{
+    border: 1px solid #00BFFF;
+}
+.dimgray-border{
+    border: 1px solid #696969;
+}
+.dodgerblue-border{
+    border: 1px solid #1E90FF;
+}
+.firebrick-border{
+    border: 1px solid #B22222;
+}
+.floralwhite-border{
+    border: 1px solid #FFFAF0;
+}
+.forestgreen-border{
+    border: 1px solid #228B22;
+}
+.fuchsia-border{
+    border: 1px solid #FF00FF;
+}
+.gainsboro-border{
+    border: 1px solid #DCDCDC;
+}
+.ghostwhite-border{
+    border: 1px solid #F8F8FF;
+}
+.gold-border{
+    border: 1px solid #FFD700;
+}
+.goldenrod-border{
+    border: 1px solid #DAA520;
+}
+.gray-border{
+    border: 1px solid #808080;
+}
+.green-border{
+    border: 1px solid #008000;
+}
+.greenyellow-border{
+    border: 1px solid #ADFF2F;
+}
+.honeydew-border{
+    border: 1px solid #F0FFF0;
+}
+.hotpink-border{
+    border: 1px solid #FF69B4;
+}
+.indianared-border{
+    border: 1px solid #CD5C5C;
+}
+.indigo-border{
+    border: 1px solid #4B0082;
+}
+.ivory-border {
+    border: 1px solid #FFFFF0;
+}
+.khaki-border {
+    border: 1px solid #F0E68C;
+}
+.lavender-border{
+    border: 1px solid #E6E6FA;
+}
+.lavenderblush-border{
+    border: 1px solid #FFF0F5;
+}
+.lawngreen-border{
+    border: 1px solid #7CFC00;
+}
+.lemonchiffon-border{
+    border: 1px solid #FFFACD;
+}
+.lightblue-border{
+    border: 1px solid #ADD8E6;
+}
+.lightcoral-border{
+    border: 1px solid #F08080;
+}
+.lightcyan-border{
+    border: 1px solid #E0FFFF;
+}
+.lightgoldenrodyellow-border{
+    border: 1px solid #FAFAD2;
+}
+.lightgray-border{
+    border: 1px solid #D3D3D3;
+}
+.lightgreen-border{
+    border: 1px solid #90EE90;
+}
+.lightpink-border{
+    border: 1px solid #FFB6C1;
+}
+.lightsalmon-border{
+    border: 1px solid #FFA07A;
+}
+.lightseagreen-border{
+    border: 1px solid #20B2AA;
+}
+.lightskyblue-border{
+    border: 1px solid #87CEFA;
+}
+.lightslategray-border{
+    border: 1px solid #778899;
+}
+.lightsteelblue-border{
+    border: 1px solid #B0C4DE;
+}
+.lightyellow-border{
+    border: 1px solid #FFFFE0;
+}
+.lime-border{
+    border: 1px solid #00FF00;
+}
+.limegreen-bg{
+    border: 1px solid #32CD32;
+}
+.linen-border{
+    border: 1px solid #FAF0E6;
+}
+.magenta-border{
+    border: 1px solid #FF00FF;
+}
+.maroon-border{
+    border: 1px solid #800000;
+}
+.mediumaquamarine-border{
+    border: 1px solid #66CDAA;
+}
+.mediumblue-border{
+    border: 1px solid #0000CD;
+}
+.mediumorchid-border{
+    border: 1px solid #BA55D3;
+}
+.mediumpurple-border{
+    border: 1px solid #9370DB;
+}
+.mediumseagreen-border{
+    border: 1px solid #3CB371;
+}
+.mediumslateblue-border{
+    border: 1px solid #7B68EE;
+}
+.mediumspringgreen-border{
+    border: 1px solid #00FA9A;
+}
+.mediumturquoise-border{
+    border: 1px solid #48D1CC;
+}
+.mediumvioletred-border{
+    border: 1px solid #C71585;
+}
+.midnightblue-border{
+    border: 1px solid #191970;
+}
+.mintcream-border{
+    border: 1px solid #F5FFFA;
+}
+.mistyrose-border{
+    border: 1px solid #FFE4E1;
+}
+.moccasin-border{
+    border: 1px solid #FFE4B5;
+}
+.navajowhite-border{
+    border: 1px solid #FFDEAD;
+}
+.navy-border{
+    border: 1px solid #000080;
+}
+.oldlace-border{
+    border: 1px solid #FDF5E6;
+}
+.olive-border{
+    border: 1px solid #808000;
+}
+.olivedrab-border{
+    border: 1px solid #6B8E23;
+}
+.orange-border{
+    border: 1px solid #FFA500;
+}
+.orangered-border{
+    border: 1px solid #FF4500;
+}
+.orchid-border{
+    border: 1px solid #DA70D6;
+}
+.palegoldenrod-border{
+    border: 1px solid #EEE8AA;
+}
+.palegreen-border{
+    border: 1px solid #98FB98; 
+}
+.paleturquoise-border{
+    border: 1px solid #AFEEEE;
+}
+.palevioletred-border{
+    border: 1px solid #DB7093;
+}
+.papayawhip-border{
+    border: 1px solid #FFEFD5;
+}
+.peachpuff-border{
+    border: 1px solid #FFDAB9;
+}
+.peru-border{
+    border: 1px solid #CD853F;
+}
+.pink-border{
+    border: 1px solid #FFC0CB;
+}
+.plum-border{
+    border: 1px solid #DDA0DD;
+}
+.powderblue-border{
+    border: 1px solid #B0E0E6;
+}
+.purple-border{
+    border: 1px solid #800080;
+}
+.red-border{
+    border: 1px solid #FF0000;
+}
+.rosybrown-border{
+    border: 1px solid #BC8F8F;
+}
+.royalblue-border{
+    border: 1px solid #4169E1;
+}
+.saddlebrown-border{
+    border: 1px solid #8B4513;
+}
+.salmon-border{
+    border: 1px solid #FA8072;
+}
+.sandybrown-border{
+    border: 1px solid #F4A460;
+}
+.seagreen-border{
+    border: 1px solid #2E8B57;
+}
+.seashell-border{
+    border: 1px solid #FFF5EE;
+}
+.sienna-border{
+    border: 1px solid #A0522D;
+}
+.silver-border{
+    border: 1px solid #C0C0C0;
+}
+.skyblue-border{
+    border: 1px solid #87CEEB;
+}
+.slateblue-border{
+    border: 1px solid #6A5ACD;
+}
+.slategray-border{
+    border: 1px solid #708090;
+}
+.snow-border{
+    border: 1px solid #FFFAFA;
+}
+.springgreen-border{
+    border: 1px solid #00FF7F;
+}
+.steelblue-border{
+    border: 1px solid #4682B4;
+}
+.tan-border{
+    border: 1px solid #D2B48C;
+}
+.teal-border{
+    border: 1px solid #008080;
+}
+.thistle-border{
+    border: 1px solid #D8BFD8;
+}
+.tomato-border{
+    border: 1px solid #FF6347;
+}
+.turquoise-border{
+    border: 1px solid #40E0D0;
+}
+.violet-border{
+    border: 1px solid #EE82EE;
+}
+.wheat-border{
+    border: 1px solid #F5DEB3;
+}
+.white-border{
+    border: 1px solid #FFFFFF;
+}
+.whitesmoke-border{
+    background-color: #F5F5F5;
+}
+.yellow-border{
+    border: 1px solid #FFFF00;
+}
+.yellowgreen-border{
+    border: 1px solid #9ACD32;
+}

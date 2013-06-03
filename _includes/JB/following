@@ -1,0 +1,10 @@
+{% if site.safe and site.JB.following.provider and page.JB.following != false %}
+
+{% case site.JB.following.provider %}
+{% when "addthis" %}
+    {% include JB/following-providers/addthis %}
+{% when "custom" %}
+  {% include custom/following %}
+{% endcase %}
+
+{% endif %}

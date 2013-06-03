@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+<meta property="og:title" content="{{ page.title }}" /> 
+  <meta property="og:image" content="" /> 
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %} 
+  <meta property="og:url" content="{{% page.url %}}">
+
+
+<title>{{ page.title }}</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{{ ASSET_PATH }}/css/bootstrap.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/css/modernismcolors.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/css/fonts.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/css/modernismstyle.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/css/sitestyle.css" rel="stylesheet">
+<link href="{{ ASSET_PATH }}/css/pygments-manni.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="{{ ASSET_PATH }}/js/html5shiv.js"></script>
+  <script src="{{ ASSET_PATH }}/js/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ ASSET_PATH }}/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ ASSET_PATH }}/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ ASSET_PATH }}/ico/apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="{{ ASSET_PATH }}/ico/apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="{{ ASSET_PATH }}/ico/favicon.png">
+
+<!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
