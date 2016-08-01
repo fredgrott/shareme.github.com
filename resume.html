@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <meta name="description" content="Fred Grott's Portfolio, an Android Developer
+     and Device Advocate in Greater Chicago Land, who happens to be an Android
+     App Developer Expert Guru and unofficial Google Developer expert,
+     using java object serialization, java thread concurrency,
+     finely grained oop architecture, fragment and activity lifecycles, oop best practices,
+     Google Material Design, mathematical structures such as monoids and tuples to get a more repsonsive app,
+     android framework parceable storage to store app state, REST patterns and
+     Observer patterns, and using Android Device User using Experience  to
+     produce android applicaitons that android users salivate for with a focus on
+     start-up, media, and enterprise android applications and android developer training.">
+     <title>Fred Grott- Portfolio</title>
+
+     <!-- CSS -->
+     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+
+   </head>
+
+   <body>
+     <nav class="grey lighten-5" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">Fred Grott</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="articles.html">articles</a></li>
+        <li><a href="demos.html">demos</a></li>
+        <li><a href="resume.html">resume</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="articles.html">articles</a></li>
+        <li><a href="demos.html">demos</a></li>
+        <li><a href="resume.html">resume</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mid-navigation-menu">menu</i></a>
+
+
+
+    </div>
+  </nav>
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">Fred Grott's Portfolio-Resume</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">This Resume is  a bit different. Would not someone who takes the 'bull by the horns' and solves android application problems be the perfect choice for your Start-Up's first Lead Android Developer? And at the same time its a diplomatic, let me lead or get the eff out of my way.</h5>
+      </div>
+
+      <br><br>
+
+       <div class="row">
+         <div class="col s12 m12">
+           <div class="card grey lighten-5">
+
+            <div class="card-content">
+              <h5>Speciality Focus: <i>Android Native Java Applications</i></h5>
+              <h5>Talk To Me About:</h5>
+              <p>-Using a Log Wrapper to reduce technical debt in the UIKit library used to better track down Android Support Library regressions without the huge time consuming effort of researching bugs due to the ability to use log wrapper on the application side to route debug log calls in UI library used.</p></br>
+              <p>-Using an application architecture choice to reduce testing to what we need to test rather than filling up tests to make code coverage tool output look good</p></br>
+              <p>-Using tools and techniques to keep track of what is now 10,000 items of the Android Framework, the Gradle Android Plugin, and Support Library Internals</p></br>
+              <p>-the Compexion Reduction Twist to Google Material Design(some of my Material Design resource xml files are based on this new trend)</p>
+            </div>
+            <div class="card-action">
+
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col s12 m12">
+           <div class="card grey lighten-5">
+
+            <div class="card-content">
+              <h5>Recent Interesting Projects:</h5>
+              <h5>GWSMaterialUIKit</h5>
+              <p>As of Fall 2016, Gradle builds of android projects are still slow when you have a lot of aars to generate or load. This occurs in projects targeting API 16 to 21 as we still have a lot of back-ported UI features to handle.</p></br>
+              <p>Thus, to meet that use case and solve the diamond dependency problem went searching for the best solution in back-porting to adjust for theme new featues and ripple. The best solution was the Material project which only needed some light code clean-up to be production ready.</p></br>
+              <p>Combined that with some code of my own, custom fonts and custom font loading, and some of my own Material resoruces to make a complete Material UI library for targeting api levels before Lollipop.</p></br>
+              <p>Not very sexy, but often solutions are not sexy just in fact mundane and boring but needed. But, because this already tackled I can concentrate on other important things like the architecture of the application. AND, when creating a custom View or UI widget I just extend from this library and get ripple, tint, themes automatically without having to think about it.</p></br>
+              <h5>Benefits:</h5>
+                <p>-properly integrate with Android Support Library internals to support theme new features with api 21</p>
+                <p>-one compact aar instead of many small aars to imporve gradle build speeds</p>
+                <p>-includes my material resource extras; keyline spacing, full monochromatic material color pallete, etc.</p>
+                <p>-includes custom fonts and the proper memory leak free way fo loading them via both view decorator and a typefacehelper to be able to load them via special xml tags or programmtically</p>
+                <p>-private resources back-ported to avoid support library not compatible changes</p>
+
+            </div>
+            <div class="card-action">
+              <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSMaterialUIKit">GWSMaterialUIKit Repo</a>
+
+            </div>
+       </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+       <h5>GWSImmutableVMKit</h5>
+       <p>With Google Data Binding it give us an easy way to two-way bind UI events to a view-model. View-Models are extremely flexible in that you can fast prototype with almost no application architecture at all or even add architecture components as the application development matures.</p></br>
+       <p>But with this new flexibility would it not be nice to have somewhat lite application responsiveness without the heavy RxJava learning curve? Turns out if you recreate collections to use unodified Maps and Lists than you can in fact create an immutable View-Model for storage using Android's bundle-parceable machinery and thus have an automatic way that device orientation changes are handled.</p></br>
+       <p>The original discover of the immutable view-state gem did not realize that one could extend it to Google Data Binding. Thus, I cleaning up the code and extending it to Google Data Binding usage.</p></br>
+       <h5>Benefits:</h5>
+       <p>-Lite App Responsiveness via immutable of the UI events and background events flow to immutable view-state</p>
+       <p>-Automatic Device orientation handling so the developer does not have to think that hard</p>
+       <p>-Flexible enough that I can extend to any application architecture pattern</p>
+       <p>-Turns Activities and Fragments into View Holder patterns</p>
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSImmuatableVMKit">GWSImmutableVMKit Repo</a>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+       <h5>GWSAndroidTruth</h5>
+       <p>Another interesting project is that I am developing a Unit Testing extension to Google's Truth Framework to replace having to use AsertJForAndroid.</p></br>
+       <h5>Benefits:</h5>
+       <p>-unit testing messages in plain Enlgish instead of developer obtuse giberish.</p>
+       <p>-easier than assetj to use and see what is going on in unit testing</p>
+
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSAndroidTruth">GWSAndroidTruth Repo</a>
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+       <h5>GWSTheadNetKit</h5>
+       <p>The Apache Client Api was deprecated in api 21. And one does not want to have to depend upon interfacing with different Volley network versions for a networking library. The solution is to use OkHttp3 libraries and set up a library that takes the pain out of the networking as far as thread pools are concerned. That way one can set an initialization method call in the extended application class without the application class being cluttered by boilerplate code. As is often the case found basic code that needed cleaned up to use, mainly proper log wrapping to avoid leaking any information in production applications.</p></br>
+
+       <h5>Benefits:</h5>
+       <p>-one version  of the library to interface with all android OS versions</p>
+       <p>-integrated with thread pools and executors for proper threading</p>
+       <p>-OkHttp uses okio to fine tune memory GC management</p>
+       <p>-one less headache</p>
+
+
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSThreadNetKit">GWSThreadNetKit Repo</a>
+
+     </div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+       <h5>GWSBuildKit</h5>
+       <p>And the final interesting project is a set of Gradle Build scripts that is flexible enough that I can plug in several different work-flows, tools, cloud-test providers, Ci servers, etc while at the same time being somewhat modular and eay to maintain.</p></br>
+       <h5>Benefits:</h5>
+       <p>-product flavors to batch test acceptance testing via cloud or local machine</p>
+       <p>-cucumber testing implemented to replace  uiautomater functonities on apis less than 18.</p>
+       <p>-git calls properly windows wrapped so build can be completed on windows using githash tags to track builds and synch with crash analytics</p>
+       <p>-implementing hugo debug features to generate debug boilerplate</p>
+       <p>-implementing leakcanary to track down activity memory leaks</p>
+       <p>-limit app versioning to manual, as automatic interfers with instantrun</p>
+       <p>-using retrolambda to avoid swith to jack and jill until that tooling has increased in speed and improved proguard options for targeting android 4.x versions. Allows me to target other Java * features that have been backported other than Lambda.</p>
+       <p>-lite code qa reporting implemented</p>
+
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSBuildKit">GWSBuildKit Repo</a>
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+
+       <p>To go fast and agile in android application development in a Start-Up you need the knowledge of the Android Framework and Support Library APIS and knowledge of how the Suport LIbrary internals work. AND, you need a strategy of doing a fast prototype and transitioning to a beta and production that doesn to involve a huge costs of refactoring code.</p></br>
+       <p>But, at the same time, one has to predict what new tools and dev techniwues will be used in the app code base 36 months from now. That is why I have the GWSImmutableVMKit project adressing both nonbinding and binding variations of View Model as I see the transition as being:</p></br>
+       <p>NonBinding-Binding(Google Data Binding)-RXJAva or Agera</p></br>
+       <p>as going from lite-Responsive App to heavy responsive app.</p></br>
+       <p>You as a start-up co-founder have the opportunity to improve your chances of finding the right android developer as your first android developer by asking questions in an on-going email conversation. Obviously, the code projects is a somewhat higher-signal compared to a resume but its not always the person familiar with android app development wanting to understand the subject at hand.</p></br>
+       <p>If you are familiar with iphone instead, no problem ask your questions and I will make every attempt to put them in into iphone app devloopment terms. If your the non-tech co-founder, now is your chance to become more familiar with android app development at somewhat FREE COSTS, take advantage of it!</p></br>
+       <p>In summary, I am developing the libraries and tools that take the pain out of the first 24-months of android app development for a start-up. While at the same time the same libraries and tools are flexible enough to be used as the android app development work-flow changes as the android app under development at the start-up matures.  HINT: I am solving are the android app development pain points your start-up will face in the first 24 months, how is that for taking the 'bull by the horns'?!(In other words I could be considered a UNDERVALUED, Senior Android App Developer)</p></br>
+
+
+     </div>
+     <div class="card-action">
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+
+       <h5>Publications:</h5>
+
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://medium.com/@fredgrott/android-secure-those-3rd-party-api-keys-f33cf1a1f465#.z06xfbpfd">Android Secure Those 3rd Party Api Keys</a></br>
+       <a class="cyan-text text-darken-4" href="https://medium.com/@fredgrott/githashses-for-android-freaks-76013ff4b5da#.szg3qog5u">GitHashes For Android Freaks</a></br>
+       <a class="cyan-text text-darken-4" href="https://medium.com/@fredgrott/speed-inflate-those-custom-views-2a405107f4a2#.nc9hdmu6f">Speed Inflate those Custom Views</a></br>
+       <a class="cyan-text text-darken-4" href="https://medium.com/@fredgrott/do-not-force-android-users-away-handle-your-exceptions-af01304e58ce#.wrthpb8fd">Do Not Force Android Users Away Handle Your Exceptions</a>
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+
+       <h5>Projects:</h5>
+       <h5>GWSSampleApps</h5>
+
+       <p>A set of demo applications showing off Google Material Design visual UI concepts alogn with development best practices.</p>
+
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSSampleApps">GWSSampleApps Repo</a>
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+
+
+       <h5>GWSAndroidUUID</h5>
+
+       <p>Properly generate a fully random User Unique ID for usuage in application crash logging and application logging. It accomplishes that by using some general Unix knowledge about machineID, randodm number generation, and I use AES to encrypt it so that too prevent certain abuse of the raw machi9neID if some crook gets root of the android device.</p>
+
+     </div>
+     <div class="card-action">
+       <a class="cyan-text text-darken-4" href="https://github.com/shareme/GWSAndroidUUID">GWSAndroidUUID Repo</a>
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+
+
+       <h5>Experience</h5>
+
+       <p>I have contributed code that became part of Eclipse Foundation's JavaME Editor, I have contributed open source tech articles ot IMB's Developer Works, I have been a technical content contributor to Dzone and Espial's javaTV Portal, and many more.</p></br>
+       <p>I have also been involved in start-ups and have taken my JavaME expereince and started applying it to Android Application Development.</p>
+
+     </div>
+     <div class="card-action">
+
+     </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col s12 m12">
+    <div class="card grey lighten-5">
+
+     <div class="card-content">
+
+
+
+       <h5>Education:</h5>
+
+       <h6>Purdue University at Indianapolis</h6>
+       <h6>Studies in Molecular Biology</h6><br>
+       <h6>CommonWelath Busness College</h6>
+       <h6>Asociates in Applied Science with Double Majors in Business and Computer Science with 3.95 GPA</h6>
+     </div>
+     <div class="card-action">
+
+     </div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+       <footer class="page-footer teal">
+           <div class="container">
+             <div class="row">
+               <div class="col l6 s12">
+                 <h5 class="white-text">Fred Grott Bio</h5>
+                 <p class="grey-text text-lighten-4">A creative that lives between two worlds both design and code with several years applicaiton development experience. Strong Android User Advocate and UX And Unofficial-Google-Development-Expert.</p>
+                 <p class="grey-text text-lighten-4">I follow the <a class="white-text" href="http://contributor-covenant.org">Contributor-Covenant code of conduct.</a></p>
+
+
+               </div>
+               <div class="col l3 s12">
+                 <h5 class="white-text">Contact</h5>
+                 <ul>
+
+                   <li><a class="white-text" href="#!">fred dot grott at gmail dot com</a></li>
+                 </ul>
+               </div>
+               <div class="col l3 s12">
+                 <h5 class="white-text">Get Social With Me</h5>
+                 <ul>
+                   <li><a class="white-text" href="http://www.facebook.com/fredgrott">Facebook</a></li>
+                   <li><a class="white-text" href="https://twitter.com/fredgrott">Twitter</a></li>
+                   <li><a class="white-text" href="https://plus.google.com/u/0/+FredGrott/about">Google +</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="footer-copyright teal darken-3">
+             <div class="container">
+               <a class="brown-text text-lighten-5" href="http://shareme.github.com">Fred Grott &copy; 2016, all rights reserved. Android TM of Google Inc.
+                 The Android Robot logo CCA3.0</a>
+             </div>
+           </div>
+          </footer>
+
+     <!-- Scripts -->
+     <script src="js/jquery-2.2.3.min.js"></script>
+     <script src="js/materialize.js"></script>
+     <script src="js/masonry.pkgd.min.js"></script>
+     <script src="js/init.js"></script>
+
+
+     <!-- Google Analytics -->
+     <script type="text/javascript">
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-23593281-1', 'auto');
+     ga('send', 'pageview');
+
+     </script>
+   </body>
+
+
+</html>
