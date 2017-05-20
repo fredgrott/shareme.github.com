@@ -1,295 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Created by Fred Grott(http://shareme.github.io)
+     2017 -->
+  <html lang="en"><!-- doctype beginning -->
+    <head><!-- Head begininning -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- specific to the Materialize CSS framework -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 shrink-to-fit=no">
+      <!-- MS Edge Stuff -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="msapplication-tap-highlight" content="no">
 
-     <meta name="description" content="Fred Grott's Portfolio, an Android Developer
-     and Device Advocate in Greater Chicago Land, who happens to be an Android
-     App Developer Expert Guru and unofficial Google Developer expert,
-     using java object serialization, java thread concurrency,
-     finely grained oop architecture, fragment and activity lifecycles, oop best practices,
-     Google Material Design, mathematical structures such as monoids and tuples to get a more repsonsive app,
-     android framework parceable storage to store app state, REST patterns and
-     Observer patterns, and using Android Device User using Experience  to
-     produce android applicaitons that android users salivate for with a focus on
-     start-up, media, and enterprise android applications and android developer training.">
-     <title>Fred Grott- Portfolio</title>
+      <meta name="description" content="Fred Grott has a startup creations studio on the southern shore of Lake Michigan in NW Indiana in the United States. He creates amny things that find their way into startups.">
 
-     <!-- CSS -->
-     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <title>Fred Grott</title>
 
+      <!-- Favicons for Android, iOS, MS-mobile, Desktop -->
+      <link rel="icon" sizes="192x192" href="images/favicons/fg-favicon-192x192.png">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="images/favicons/fg-favicon-144x144.png">
+      <link rel="shortcut icon" href="images/favicons/fg-favicon-72x72.png">
+      <link rel="apple-touch-icon"  href="images/favicons/fg-favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/fg-favicon-72x72.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/fg-favicon-144x144.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/fg-favicon-180x180.png">
 
+      <!-- CSS, CSS framework first than fonts than custom -->
+      <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+      <link href="css/material-icons.css" rel="stylesheet" type="text/css">
+      <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" type="text/css" rel="stylesheet">
 
+      <!-- Facebook, Twitter, and few other popular social platforms
+           require Schema.org, Open Graph, or other markup so that
+           when sharing the url the correct images and site url
+           get posted right during the share-->
 
-   </head>
-   <body>
-     <nav class="grey lighten-5" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">Fred Grott</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="articles.html">articles</a></li>
-        <li><a href="books.html">books</a></li>
-        <li><a href="consulting.html">consulting</a></li>
-        <li><a href="design.html">design</a></li>
-      </ul>
+      <!-- Schema.org markup goes here -->
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="articles.html">articles</a></li>
-        <li><a href="books.html">books</a></li>
-        <li><a href="consulting.html">consulting</a></li>
-        <li><a href="design.html">design</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mid-navigation-menu">menu</i></a>
+      <!-- Open Graph markup goes here -->
 
+      <!-- Twitter Card markup goes here -->
 
+    </head><!-- head ending -->
+    <body>
+      <header>
+        <!-- doing it this one has to remember that both the tablet and celldevice specific menu/footer
+             combinations must use lists for non-icon text links
 
-    </div>
-  </nav>
-  <div class="section no-pad-bot">
-    <div class="container">
-      <br><br>
-      <h1 class="header center teal-text text-lighten-2">Fred Grott's Portfolio</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">FULL Google Material Design Gets High Downloads, MAUs, and IN-App Purchases</h5>
-      </div>
-
-      <br><br>
-
-      <div class="row">
-        <div class="col s12 m6">
-          <div class= "card">
-            <div class="card-image">
-              <img src="img/android_two.png">
-
-            </div>
-            <div class="card-content">
-              <h5>Expertise</h5>
-              <p>Several years experience in java including mobile java and android
-                java app experience and, of course, start-up experience. My Senior Android App Design and Development
-                skills are finely tuned by building my own andriod apps and scoring
-                in the top 10% every month at StackOverflow answwering other
-                developers questions.</p>
-            </div>
-            <div class="card-action">
+             middle column text gets split on celldevice to left aqnd right columns
+             most css frameworks list 600px as that is a cell-device in landscape mode
+             and most seasoned mobile web users put their cell-device in
+             landscape mode for viewing the web, even I do.
+           -->
+        <div class="desk hide-on-med-and-down">
+       <div class="row"><!-- row beginning -->
+          <div class="col l2"><!-- column beginning -->
+            <a href="index.html"><img class="" src="images/fredgrott_black_raw.png"/></a>
 
 
-              <a class="indigo-text" href="https://angel.co/fred-grott">AngelList</a>
-              <a class="indigo-text" href="https://www.behance.net/gwsfredgrott">BeHance</a>
-              <a class="indigo-text" href="https://www.builtinchicago.org/member/fred-grott">BuiltInChicago</a>
-              <a class="indigo-text" href="http://shareme.deviantart.com">DeviantArt</a>
-              <a class="indigo-text" href="https://dribbble.com/FredGrott">Dribbble</a>
-              <a class="indigo-text" href="http://www.facebook.com/fredgrott">Facebook</a>
-              <a class="indigo-text" href="https://geekli.st/u/fredgrott">GeekList</a>
-              <a class="indigo-text" href="https://github.com/shareme">Github </a>
-              <a class="indigo-text" href="https://plus.google.com/u/0/+FredGrott/about">Google+</a>
-              <a class="indigo-text" href="http://grottworkshop.blogspot.com">GrottWorkShop Blog</a>
-              <a class="indigo-text" href="https://news.ycombinator.com/user?id=fredgrott">HackerNews</a>
-              <a class="indigo-text" href="http://www.linkedin.com/in/shareme/en">LinkedIn </a>
-              <a class="indigo-text" href="https://www.uplabs.com/fred_grott">MaterialUp</a>
-              <a class="indigo-text" href="https://medium.com/@fredgrott">Medium</a>
-              <a class="indigo-text" href="https://www.meetup.com/members/2594666/">MeetUp</a>
-              <a class="indigo-text" href="https://www.producthunt.com/@fredgrott">ProductHunt</a>
-              <a class="indigo-text" href="http://www.quora.com/Fred-Grott">Quora</a>
-              <a class="indigo-text" href="http://www.reddit.com/user/fredgrott">Reddit</a>
-              <a class="indigo-text" href="https://samebug.io/user/259/fredgrott">SameBug</a>
-              <a class="indigo-text" href="http://www.slideshare.net/shareme">SlideShare</a>
-              <a class="indigo-text" href="https://speakerdeck.com/fredgrott">SpeakerDeck</a>
-              <a class="indigo-text" href="http://stackoverflow/com/users/237740/fred-grott">StackOverflow</a>
-              <a class="indigo-text" href="https://twitter.com/fredgrott">Twitter</a>
-              <a class="indigo-text" href="https://www.youtube.com/channel/UCRQadYlHQ8DKRQ_WwUrfZ_w">YoutubeChannel</a>
-
-            </div>
           </div>
+          <div class="col l6 "><!-- column beginning -->
+            <h6 class="black-text">&nbsp;<b>Fred Grott</b></h6>
+            <h6 class="black-text">&nbsp;Startup Fiend and Troublemaker</h6>
+
+
+          </div>
+
+          <div class="col l4 "><!-- column beginning -->
+
+            <a class="black-text" href="https://www.producthunt.com/@fredgrott"><i class="fa fa-2x fa-product-hunt"></i></a>
+            <a class="black-text" href="https://news.ycombinator.com/user?id=fredgrott"><i class="fa fa-2x fa-hacker-news"></i></a>
+            <a class="black-text " href="http://shareme.deviantart.com"><i class="fa fa-2x fa-deviantart"></i></a>
+            <a class="black-text " href="https://github.com/shareme"><i class="fa fa-2x fa-github-square"></i></a>
+            <a class="black-text " href="https://plus.google.com/u/0/+FredGrott"><i class="fa fa-2x fa-google-plus-square"></i></a>
+            <a class="black-text " href="https://twitter.com/fredgrott"><i class="fa fa-2x fa-twitter-square"></i></a>
+            <a class="black-text " href="https://medium.com/@fredgrott"><i class="fa fa-2x fa-medium"></i></a>
+            <a class="black-text " href="https://www.pinterest.com/fredgrott/"><i class="fa fa-2x fa-pinterest"></i></a>
+            <h6 class="black-text">&copy;2017, All rights reserved.</h6>
+          </div>
+       </div>
+
+       <div class="row">
+         <div  class="col l12"><!-- column beginning -->
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <h1 class="center intro_header">Doing Startups <span class="teal-text text-darken-4">a Different Way</span></h1>
+
+         </div><!-- column ending -->
+       </div>
+
+   </div><!-- desk ending -->
+   <div class="tablet hide-on-large-only hide-on-small-only"><!-- tablet beginnning -->
+     <div class="row"><!-- row beginning -->
+        <div class="col m4"><!-- column beginning -->
+          <a href="index.html"><img class="" src="images/fredgrott_black_raw.png"/></a>
+
+        </div>
+        <div class="col m4 "><!-- column beginning -->
+          <h6 class="black-text">&nbsp;<b>Fred Grott</b></h6>
+          <h6 class="black-text">&nbsp;Startup Fiend</h6>
+
+
         </div>
 
-      <div class="col s12 m6">
-         <div class="card">
-           <div class="card-image">
-             <img src="img/androidosfrag.png">
-
-           </div>
-           <div class="card-content">
-             <h5>Fragmented Android App Solutions</h5>
-              <p>With the Android Platform having 83% of the world-wide market and
-              80% of the US market AND the older android 4.x devices being 50% of
-            that market OS Fragmentation Solutions become a FOCUS ON CONSISTENT
-          VISUAL BRANDING. Sure you want your android app to function but also
-        you want the visual and the feature-set to be as close to the same as possible
-      on both the older android 4.x devices and the new android 7.x devices.</p>
-      <p>The BAD NEWS is that Google only minimal back-ports new UI features in the
-      form of the Android Suppport Libs they supply and those same libs only have the
-    minimal Google Material Design implemented. My solution is an investment of
-  my development time in creating an integrated additional set of Android Support Libs
-that fully port not only cool new UI features but also full Google Material Design
-to Android 4.x devices.</p>
-           </div>
-</div>
-</div>
-</div>
-
-
-
-
+        <div class="col m4 "><!-- column beginning -->
+          <a class="black-text" href="https://www.producthunt.com/@fredgrott"><i class="fa fa-2x fa-product-hunt"></i></a>
+          <a class="black-text" href="https://news.ycombinator.com/user?id=fredgrott"><i class="fa fa-2x fa-hacker-news"></i></a>
+          <a class="black-text " href="http://shareme.deviantart.com"><i class="fa fa-2x fa-deviantart"></i></a>
+          <a class="black-text " href="https://github.com/shareme"><i class="fa fa-2x fa-github-square"></i></a>
+          <a class="black-text " href="https://plus.google.com/u/0/+FredGrott"><i class="fa fa-2x fa-google-plus-square"></i></a>
+          <a class="black-text " href="https://twitter.com/fredgrott"><i class="fa fa-2x fa-twitter-square"></i></a>
+          <a class="black-text " href="https://medium.com/@fredgrott"><i class="fa fa-2x fa-medium"></i></a>
+          <a class="black-text " href="https://www.pinterest.com/fredgrott/"><i class="fa fa-2x fa-pinterest"></i></a>
+          <h6 class="black-text">&copy;2017, All rights reserved.</h6>
+        </div>
+     </div>
 
      <div class="row">
-       <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/androidsix.png">
+       <div  class="col m12"><!-- column beginning -->
+         <br/>
 
-            </div>
-            <div class="card-content">
-              <h5>Services</h5>
-              <p><ul>
-                <li>UX Android App Design And Android App Development</li>
-                <li>StartUp Android App Prototyping</li>
-                <li>Google IoT</li>
-                <li>Rescuing At-Risk-Android-Development Projects<li>
-                <li>Android Developer Training</li>
-                <li>Android Technical Talks</li>
-                <li>Android, Embedded Mobile(Upon Special Request)</li>
-                <li>Source Code Security Reviews</li>
-              </ul></p>
-            </div>
-          </div>
+         <br/>
+         <br/>
+         <h1 class="center intro_header">Doing Startups <span class="teal-text text-darken-4">a Different Way</span></h1>
+         <br/>
+         <br/>
+       </div><!-- column ending -->
+     </div>
+
+   </div><!-- tablet ending -->
+   <div class="celldevice hide-on-med-and-up"><!-- celldevice beginning -->
+     <div class="row"><!-- row beginning -->
+        <div class="col s6"><!-- column beginning -->
+          <a href="index.html"><img class="" src="images/fredgrott_black_raw.png"/></a>
+          <h6 class="black-text"><b>Fred Grott</b></h6>
+
         </div>
 
 
-
-
-
-
-
-       <div class="col s12 m6">
-         <div class="card">
-           <div class="card-image">
-             <img src="img/currentapp.jpg">
-           </div>
-           <div class="card-content">
-              <h5>Current App</h5>
-              <p>I am one of the few Android App Design-Dev Shops that creates some
-              independent apps separate from client android apps. The current android app
-            I am develpoing is a task applications for some very diverse work-flows that is
-          evident in the enterprise world.</p>
-           </div>
-           <div class="card-action">
-              <a class="indigo-text" href="">CurrentAndroidApp</a>
-           </div>
-       </div>
+        <div class="col s6 "><!-- column beginning -->
+          <a class="black-text" href="https://www.producthunt.com/@fredgrott"><i class="fa fa-2x fa-product-hunt"></i></a>
+          <a class="black-text" href="https://news.ycombinator.com/user?id=fredgrott"><i class="fa fa-2x fa-hacker-news"></i></a>
+          <a class="black-text " href="http://shareme.deviantart.com"><i class="fa fa-2x fa-deviantart"></i></a>
+          <a class="black-text " href="https://github.com/shareme"><i class="fa fa-2x fa-github-square"></i></a>
+          <a class="black-text " href="https://plus.google.com/u/0/+FredGrott"><i class="fa fa-2x fa-google-plus-square"></i></a>
+          <a class="black-text " href="https://twitter.com/fredgrott"><i class="fa fa-2x fa-twitter-square"></i></a>
+          <a class="black-text " href="https://medium.com/@fredgrott"><i class="fa fa-2x fa-medium"></i></a>
+          <a class="black-text " href="https://www.pinterest.com/fredgrott/"><i class="fa fa-2x fa-pinterest"></i></a>
+          <h6 class="black-text">Startup Fiend</h6>
+          <h6 class="black-text">&copy;2017, All rights reserved.</h6>
+        </div>
      </div>
-   </div>
+
+     <div class="row">
+       <div  class="col s12"><!-- column beginning -->
+         <br/>
 
 
 
 
+         <h1 class="center intro_header">Doing Startups <span class="teal-text text-darken-4">a Different Way</span></h1>
+         <br/>
+         <br/>
+         <br/>
+       </div><!-- column ending -->
+     </div>
 
+   </div><!-- celldevice ending -->
 
+      </header>
 
+      <!-- scripts -->
 
-</div>
+      <!-- Google Analytics -->
+      <script type="text/javascript">
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+     ga('create', 'UA-23593281-1', 'auto');
+     ga('send', 'pageview');
 
+   </script>
 
-      <footer class="page-footer teal">
-       <div class="container">
-         <div class="row">
-           <div class="col l6 s12">
-             <h5 class="white-text">Fred Grott Bio</h5>
-             <p class="grey-text text-lighten-4">A creative that lives between
-               two worlds both design and code with several years applicaiton
-               development experience. Strong Android User Advocate and UX And
-               Unofficial-Google-Developer-Expert.</p>
-               <p class="grey-text text-lighten-4">I follow the <a class="white-text" href="http://contributor-covenant.org">Contributor-Covenant code of conduct.</a></p>
-
-
-           </div>
-           <div class="col l3 s12">
-             <h5 class="white-text">Contact</h5>
-             <ul>
-
-               <li><a class="white-text" href="#!">fred dot grott at gmail dot com</a></li>
-             </ul>
-           </div>
-           <div class="col l3 s12">
-             <h5 class="white-text">Get Social With Me</h5>
-             <ul>
-               <li><a class="white-text" href="http://www.facebook.com/fredgrott">Facebook</a></li>
-               <li><a class="white-text" href="https://twitter.com/fredgrott">Twitter</a></li>
-               <li><a class="white-text" href="https://plus.google.com/u/0/+FredGrott/about">Google +</a></li>
-             </ul>
-           </div>
-         </div>
-       </div>
-       <div class="footer-copyright teal darken-3">
-         <div class="container">
-         <a class="brown-text text-lighten-5" href="http://shareme.github.com">Fred Grott &copy; 2016, all rights reserved. Android TM of Google Inc.
-           The Android Robot logo CCA3.0</a>
-         </div>
-       </div>
-     </footer>
-
-
-
-     <!-- Scripts -->
-     <script src="js/jquery-2.2.3.min.js"></script>
-     <script src="js/materialize.js"></script>
-     <script src="js/masonry.pkgd.min.js"></script>
-     <script src="js/init.js"></script>
-
-
-     <!-- Google Analytics -->
-     <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-23593281-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
-  <!-- Open Graph Stuff -->
+   <!-- Open Graph Stuff -->
   <script type="application/1d+json">
   {
-    "@context": "http://shcmea.org",
+    "@context": "http://schema.org",
     "@type" : "Person",
     "name" : "Fred Grott",
-    "url":"http://shareme.github.com",
+    "url":"http://shareme.github.io",
     "sameAs": [
-      "https://samebug.io/user/259/fredgrott",
-      "https://geekli.st/u/fredgrott",
-      "https://news.ycombinator.com/user?id=fredgrott",
-      "http://www.reddit.com/user/fredgrott",
-      "http://shareme.deviantart.com",
-      "https://www.behance.net/gwsfredgrott",
-      "https://dribbble.com/FredGrott",
       "https://angel.co/fred-grott",
-      "http://members.founderdating.com/profile/6572",
-      "http://grottworkshop.blogspot.com",
-      "https://www.producthunt.com/@fredgrott",
-      "https://gun.io/accounts/shareme",
-      "https://medium.com/@fredgrott",
-      "http://www.linkedin.com/in/shareme/en",
-      "https://www.xing.com/profile/Fred_Grott?sc_o=mxb_p",
-      "https://www.youtube.com/channel/UCRQadYlHQ8DKRQ_WwUrfZ_w",
+      "https://www.behance.net/gwsfredgrott",
       "https://www.builtinchicago.org/member/fred-grott",
+      "http://shareme.deviantart.com",
+      "https://dribbble.com/FredGrott",
+      "http://www.facebook.com/fredgrott",
+      "https://geekli.st/u/fredgrott",
+      "https://github.com/shareme",
+      "https://plus.google.com/u/0/+FredGrott",
+      "https://news.ycombinator.com/user?id=fredgrott",
+      "http://www.linkedin.com/in/shareme/en",
+      "https://medium.com/@fredgrott",
+      "https://www.pinterest.com/fredgrott/",
+      "https://www.producthunt.com/@fredgrott",
+      "http://www.reddit.com/user/fredgrott",
       "http://www.quora.com/Fred-Grott",
+      "https://samebug.io/user/259/fredgrott",
       "http://www.slideshare.net/shareme",
       "https://speakerdeck.com/fredgrott",
-      "https://plus.google.com/u/0/+FredGrott".
-      "https://twitter.com/fredgrott",
-      "http://www.facebook.com/fredgrott",
       "http://stackoverflow/com/users/237740/fred-grott",
-      "https://github.com/shareme"
+      "https://twitter.com/fredgrott",
+      "https://www.youtube.com/channel/UCRQadYlHQ8DKRQ_WwUrfZ_w"
     ]
   }
 
   </script>
 
 
- </body>
-</html>
+
+     <script src="js/jquery.min.js"></script>
+     <script src="js/materialize.min.js"></script>
+     <script src="js/init.js"></script>
+
+    </body>
+  </html>
