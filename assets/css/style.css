@@ -1,0 +1,96 @@
+/*
+   Fred Grott's GH-Pages Site
+   Fred Grott
+
+*/
+.container {
+
+  max-width: 95%;
+
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/*
+  This is how I get the bleed-to-edge content effect
+*/
+.container-fluid{
+  width: 100%;
+  max-width: 100%;
+}
+.container-fluid > row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+nav{
+
+  background: -webkit-linear-gradient(left, #03a9f4, #1976d2 5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -moz-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -ms-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+  background: -o-linear-gradient(left, #03a9f4, #1976d2  5%, #1976d2 , #03a9f4 95%, #1976d2 );
+}
+
+.slider .slides li .caption {
+
+   top: 40%;
+
+}
+
+.caption-title{
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.caption-body{
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+
+/* you will have to darken or choose an accent of your color scheme */
+.slider .indicators .indicator-item {
+  background-color:  #0d47a1;
+}
+.slider .indicators .indicator-item.active {
+  background-color: #80d8ff;
+}
+/*
+  For container-fluid to work we need to wrap both the main and the footer
+  and offset that for the fullscreen slider
+*/
+.main-content-wrapper{
+  display: block;
+  position: relative;
+  top: 753px;
+
+}
+@media only screen and (max-width: 600px) {
+  .main-content-wrapper{
+    top: 253px;
+  }
+
+}
+@media only screen and (max-width: 993px) {
+  .main-content-wrapper{
+    top: 253px;
+  }
+
+}
+@media only screen and (max-width: 1280px) {
+  .main-content-wrapper{
+    top: 453px;
+  }
+
+}
+
+@media only screen and (min-width: 1680px){
+  .main-content-wrapper{
+    top: 953px;
+  }
+}
+@media screen and (min-width: 1980px) {
+  .main-content-wrapper{
+    top: 1553px;
+  }
+}
