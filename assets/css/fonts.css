@@ -284,7 +284,7 @@
        url('../fonts/robotomono/robotomono-bold.svg#robotomono') format('svg');
 }
 @font-face {
-  font-family: 'Roboto mono';
+  font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 700;
   src: url('../fonts/robotomono/robotomono-bolditalic.eot');
@@ -293,4 +293,73 @@
        url('../fonts/robotomono/robotomono-bolditalic.woff') format('woff'),
        url('../fonts/robotomono/robotomono-bolditalic.tff') format('truetype'),
        url('../fonts/robotomono/robotomono-bolditalic.svg#robotomono') format('svg');
+}
+/*
+   Roboto Condensed
+*/
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/robotocondensed/robotocondensed-light.eot");
+  src: url("../fonts/robotocondensed/robotocondensed-light.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/robotocondensed/robotocondensed-light.woff2") format('woff2'),
+       url("../fonts/robotocondensed/robotocondensed-light.woff") format('woff'),
+       url("../fonts/robotocondensed/robotocondensed-light.ttf") format('trueype'),
+       url("../fonts/robotocondensed/robotocondensed-light.svg#robotocondensed") fromat('svg');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/robotocondensed/robotocondensed-lightitalic.eot");
+  src: url("../fonts/robotocondensed/robotocondensed-lightitalic.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/robotocondensed/robotocondensed-lightitalic.woff2") format('woff2'),
+       url("../fonts/robotocondensed/robotocondensed-lightitalic.woff") format('woff'),
+       url("../fonts/robotocondensed/robotocondensed-lightitalic.ttf") format('truetyope'),
+       url("../fonts/robotocondensed/robotocondensed-lightitalic.svg#robotocondensed") format('svg');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/robotocondensed/robotocondensed-regular.eot");
+  src: url("../fonts/robotocondensed/robotocondensed-regular.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/robotocondensed/robotocondensed-regular.woff2") format('woff2'),
+       url("../fonts/robotocondensed/robotocondensed-regular.woff") format('woff'),
+       url("../fonts/robotocondensed/robotocondensed-regular.ttf") format('truetype'),
+       url("../fonts/robotocondensed/robotocondensed-regular.sbvg#robotocondensed") format('svg');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/robotocondensed/robotocondensed-italic.eot");
+  src: url("../fonts/robotocondensed/robotocondensed-italic.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/robotocondensed/robotocondensed-italic.woff2") format('woff2'),
+       url("../fonts/robotocondensed/robotocondensed-italic.woff") format('woff'),
+       url("../fonts/robotocondensed/robotocondensed-italic.ttf") format('truetype'),
+       url("../fonts/robotocondensed/robotocondensed-tialic.svg#robotocondensed")format('svg');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/robotocondensed/robotocondensed-bold.eot");
+  src: url("../fonts/robotocondensed/robotocondensed-bold.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/robotocondensed/robotocondensed-bold.woff2") format('woff2'),
+       url("../fonts/robotocondensed/robotocondensed-bold.woff") format('woff'),
+       url("../fonts/robotocondensed/robotocondensed-bold.ttf") format('truetype'),
+       url("../fonts/robotocondensed/robotocondensed-bold.svg#robotocondensed") format('svg');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/robotocondensed/robotocondensed-bolditalic.eot");
+  src: url("../fonts/robotocondensed/robotocondensed-bolditalic.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/robotocondensed/robotocondensed-bolditalic.woff2") format('woff2'),
+       url("../fonts/robotocondensed/robotocondensed-bolditalic.woff") format('woff'),
+       url('../fonts/robotocondensed/robotocondensed-bolditalic.ttf') format('truetype'),
+       url("../fonts/robotocondensed/robotocondensed-bolditalic.svg#robotocondensed") format('svg');
 }

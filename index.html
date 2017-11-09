@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <!--
-    Fred Grott's GH-Pagees site
+      Hi viewers from UpLabs, HN, Twitter, etc...yes its my creation...Fred Grott
+
+      Have a virtual web project that needs design and web code care?
+      Email me at fred DOT grott AT gmail DOT com
 -->
 <html lang="en">
-  <head>
-    <!-- Specific to the Materialize CSS Framework -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 shrink-to-fit=no">
-    <!-- For MS Edge-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- REMOVE THIS IN THE FINAL VERSION OF YOUR SITE -->
-    <meta name="robots" content="noindex">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="Award Winning LandingPage Demo">
+     <meta name="author" content="Fred Grott">
 
-    <meta name="description" content="Fred Grott, doing startups a different wy">
+     <title>Fred Grott</title>
 
-    <title>Fred Grott</title>
+     <!-- For MS Edge, Google's Chrome and Apple's Safari do not require this-->
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Your favicons generate from realfavicongenerator.net go below-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+     <!-- Your favicons generate from realfavicongenerator.net go below-->
+     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+     <link rel="manifest" href="manifest.json">
+     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="theme-color" content="#ffffff">
 
-    <!-- CSS, CSS framework first than fonts than custom
+     <!-- CSS, CSS framework first than fonts than custom
            CDN Urls to load this via the cloud are in the docs
        -->
-    <link href="assets/css/fonts.css" type="text/css" rel="stylesheet">
-    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="assets/css/material-icons.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+      <link href="assets/css/fonts.css"  rel="stylesheet">
+      <link href="assets/css/material-icons.css" rel="stylesheet" >
+      <link href="assets/css/font-awesome.css" rel="stylesheet">
+      <link href="assets/css/material-colors.css" rel="stylesheet">
+      <link href="assets/css/bootstrap-material-design.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
 
-    <script src="assets/js/jquery-3.2.1.js"></script>
-    <script src="assets/js/materialize.js"></script>
+      <!-- Schema.org markup goes here -->
 
-
-
-    <script src="assets/js/init.js"></script>
-    <script src="assets/js/custom.js"></script>
-
-
-    <!-- custom js goes here
-      -->
-     <script type="text/javascript">
-     </script>
-
-     <!-- Schema.org markup goes here -->
-
-
-    <!-- Open Graph markup goes here -->
-    <script type="application/1d+json">
+      <!-- Open Graph markup goes here -->
+      <script type="application/1d+json">
         {
           "@context": "http://schema.org",
           "@type" : "Person",
@@ -86,47 +72,210 @@
          }
       </script>
 
+      <!-- Google Analytics -->
 
-    <!-- Twitter Card markup goes here -->
 
 
-  </head>
-  <body>
-    <div class="navbar-fixed">
-      <nav id="mynavbar" class=" z-depth-0" role="navigation">
-         <div class="nav-wrapper">
-           <a href="index.html" class="brand-logo center"><img src="assets/images/fredgrottlogo-175x48.png"></a>
 
-         </div>
-      </nav>
-    </div>
-      <div class="slider fullscreen myslider">
-       <ul class="slides">
-         <li>
-           <img src="assets/images/slides/stoicpurpose-slideone.png"> <!-- random image -->
-               <div class="caption  center-align">
+      <!-- Twitter Card markup goes here -->
 
-                 <i class="fa fa-3x fa-paper-plane"></i>
-                <h2 class="caption-title">Fred Grott</h2>
-                <h5 class="white-text caption-body">No, no Recruiters!</h5>
+
+
+
+   </head>
+   <body>
+       <header>
+           <nav class="navbar navbar-expand-md navbar-light">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <a href='index.html' class="navbar-brand"><img src="assets/images/fredgrottlogo.png"></a>
+             <div class="collapse navbar-collapse" id="mainMenu">
+               <ul class="navbar-nav ml-auto my-site">
+                 <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="aboutMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          About
+                      </button>
+                         <div class="dropdown-menu" aria-labelledby="aboutMenuButton">
+                                <a class="dropdown-item" href="#">Intro</a>
+                                <a class="dropdown-item" href="#">Contact</a>
+                          </div>
+                  </div>
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="projectsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Projects
+                       </button>
+                          <div class="dropdown-menu" aria-labelledby="projectsMenuButton">
+                                 <a class="dropdown-item" href="#">Intro</a>
+
+                           </div>
+                   </div>
+                   <div class="dropdown">
+                       <button class="btn btn-secondary dropdown-toggle" type="button" id="toolsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </button>
+                           <div class="dropdown-menu" aria-labelledby="toolsMenuButton">
+                                  <a class="dropdown-item" href="#">Intro</a>
+
+                            </div>
+                    </div>
+
+
+
+
+
+
+
+               </ul>
+               <ul class="navbar-nav ml-auto my-social">
+                 <li><a class="nav-item nav-link" href="https://github.com/sharem"><i class="fa fa-github"></i></a></li>
+                 <li><a class="nav-item nav-link" href="https://twitter.com/fredgrott"><i class="fa fa-twitter"></i></a></li>
+                 <li><a class="nav-item nav-link" href="https://plus.google.com/u/0/+FredGrott"><i class="fa fa-google-plus"></i></a></li>
+               </ul>
+             </div>
+           </nav>
+       </header>
+
+         <header>
+           <!-- Okay, I borrowed this from Stripe and modify it...give them credit if you re-use
+
+                Basically, to get more than one shape you add spans and put additional
+                linear gradients skewed and rotated on the different spans. Also,
+                remember unlike the CSS-tricks article claim and getting it wrong
+                Erik Kennedy(shame on you!), you are not limited
+                to just square shapes as you also have plenty of border radius tricks
+                to experiement with!
+             -->
+           <div id="candy">
+                 <span id="seaseme-street"></span>
+                 <span id="meatball"></span>
+                 <span></span>
+                 <span id="icecream"></span>
+                 <span></span>
+                 <span></span>
+            </div>
+            <section id="intro">
+               <div class="container">
+                 <div class="row">
+
+                       <div class="col">
+                         <br/>
+                         <br/>
+                         <br/>
+                         <br/>
+                         <br/>
+
+                         <h1 class="ml-0 intro-one animate-pop-in">Making You And Your Clients</h1>
+                         <h1 class="ml-4 intro-two animate-pop-in">Awesomely Stunning</h1>
+                          <a class="btn btn-outline-md-primary ml-5 intro-button animate-pop-in" href="#mailto:fred.grott@gmail.com?subject=Project%20Inquiry" role="button" data-ripple-color="rgb(63,81,181)">Contact Me</a>
+                       </div>
+                 </div>
 
                </div>
-          </li>
-         <li>
-               <img src="assets/images/slides/stoicpurpose-slidetwo.png"> <!-- random image -->
-               <div class="caption  right-align">
 
-                 <i class="fa fa-3x fa-desktop"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-mobile"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-tablet"></i>&nbsp;&nbsp;<i class="fa fa-3x fa-tv"></i>
-                 <h2 class="caption-title">Nothing to see here yet</h2>
+            </section>
+         </header>
+         <div class="container">
+           <main>
 
-              </div>
-         </li>
-       </ul>
-   </div>
-      <div class="main-content-wrapper">
-        <main id="home-fullscreenslider" class="home-content">
-        </main>
+         <section id="promo">
+               <div class="row">
+                 <div class="col-sm-12">
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                 </div>
+               </div>
+             <div class="row">
+               <div class="col-lg-12 p-5 section-headers"><h1>How Do I Make You Freaking Awesome?</h1></div>
 
-        </div>
-  </body>
+             </div>
+             <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                 <i class="fa fa-2x fa-css3"></i><i class="fa fa-2x fa-html5"></i><i class="fa fa-2x fa-code"></i>
+                 <h2 class="promo-headers">Standards</h2>
+                 <p>Web code standards compliant baked with the care of an expert chef that loves to cook new feasts for website viewers.</p>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                 <i class="fa fa-2x fa-tv"></i><i class="fa fa-2x fa-tablet"></i><i class="fa fa-2x fa-mobile"></i><i class="fa fa-2x fa-desktop"></i>
+                 <h2 class="promo-headers">Responsive</h2>
+                 <p>Automatically adapts to platform its viewed on for maxium visceral user experience.</p>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                 <i class="fa fa-2x fa-opera"></i><i class="fa fa-2x fa-chrome"></i><i class="fa fa-2x fa-firefox"></i><i class="fa fa-2x fa-internet-explorer"></i>
+                 <h2 class="promo-headers">It Just Works!</h2>
+                 <p>I make the difficult look easy, with reliable code that works every time in every browser.</p>
+               </div>
+             </div>
+
+         </section>
+         <section id="the-brief">
+           <div class="row">
+             <div class="col-lg-12 p-5 section-headers"><h1>Let Me Be Brief</h1></div>
+
+           </div>
+           <div class="row">
+             <div class="col-lg-4 col-sm-12">
+
+               <h2 class="promo-headers">Location?</h2>
+               <p>No, not in your location as I work virtually from the southern shores of Lake Michigan in NW Indiana in the United States.</p>
+             </div>
+             <div class="col-lg-4 col-sm-12">
+
+               <h2 class="promo-headers">No Recruiters</h2>
+               <p>Nope, I do not feed the recruiters. They somewhat bite really hard and do really strange things that run counter to being a good and an effective sales-person.</p>
+             </div>
+             <div class="col-lg-4 col-sm-12">
+
+               <h2 class="promo-headers">Why?</h2>
+               <p>I love making the web a better place with better web experiences and making your brand look awesome.</p>
+             </div>
+           </div>
+         </section>
+
+       </main>
+       <footer>
+        <p>&copy;2017-2018 All rights reserved by  <a href="https://www.uplabs.com/fred_grott">Fred Grott</a>(secret-handshake:fred.grott@gmail.com), made with <a href="https://fezvrasta.github.io/bootstrap-material-design/">Bootstrap Material Design</a>.</p>
+      </footer>
+     </div>
+
+     <!-- Google Analytics -->
+      <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-23593281-1', 'auto');
+          ga('send', 'pageview');
+
+      </script>
+
+
+     <!-- So the page loads faster, we put javascript at end of page-->
+     <script src="assets/js/jquery-3.2.1.js"></script>
+     <script src="assets/js/popper.min.js"></script>
+     <script src="assets/js/snackbar.min.js"></script>
+     <script src="assets/js/vendors/velocity/velocity.js"></script>
+     <script src="assets/js/vendors/velocity/velocity.ui.js"></script>
+     <script src="assets/js/vendors/scrollmagic/ScrollMagic.js"></script>
+     <script src="assets/js/vendors/scrollmagic/animation.velocity.js"></script>
+     <script src="assets/js/bootstrap-material-design.js"></script>
+     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+     <script src="assets/js/init.js"></script>
+
+   </body>
+
 </html>
