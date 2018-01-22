@@ -1,75 +1,35 @@
 <!--
-     Part of Fred Grott's Github Pages site,
-     Copyright 2017 by Fred Grott, all rights reserved
+     Fred Grott
 
-     v0.0.1
-
-     @fredgrott
-     fred.grott@gmail.com
-     gv: 1-219-448-5844
-     (no fucking recruiters means exactly what it does)
-
-     Web Framework Extension Philosophy:  Those that use the default CSS framework class and over-ride
-                                          instead of impl'ing a new class to over-ride stuff should
-                                          be effing shot for effing up end-users exp of using the
-                                          web kit they bought from you as the stuff you add on top of
-                                          any CSS framework should be loosely-coupled not tightly-coupled!
-
-                                          What do you think happens when Twitter updates BS and your end user
-                                          attempts to update using that and your tightly-coupled stuff on top?
-                                          Yes, folks it breaks and the end user will blame you.
-
-      Browser Compatibility:
-            MS Edge(desktop and mobile nope, not MSIE)
-            Google Chrome(desktop and mobile)
-            Apple Safari(desktop and mobile)
-            Mozilla FireFox(desktop and mobile)
-            Opera(desktop and mobile, nope not Opera Mini)
-
-      Note: MSIE is unequal in how it does things and given the low percetnage
-            in the market its best to just drop support for it.
+     0.0.1
 
 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- x-iphone notch fix, mainly fixes the fixed navbar issue along with
-         setting body bg color to navbar/hero bg color and the notch
-         adjustment for landscape is the css padding at top of
-         style.css file -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="description" content="Award Winning FredGrott web designs">
+    <meta name="description" content="Designer, maker, coder, vagabond, dreamer">
     <meta name="author" content="Fred Grott">
-
-
-    <title>FredGrott</title>
-
-    <!-- For MS Edge, Google's Chrome and Apple's Safari do not require this-->
+    <title>Fred Grott</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Your favicons generate from realfavicongenerator.net go below-->
+    <!-- create a 512x512 favicon image and than use realfavicongenerator.net to generate these-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-
     <!-- order is:
-                   1. fonts
-                   2. BSM
-                   3. 3rd party plugin css files
-                   4. site css style file
+                 1. fonts
+                 2. BSM
+                 3. 3rd party plugin css files
+                 4. site css style file
     -->
-    <link href="assets/css/fonts.css"  rel="stylesheet" media="none" onload="if(this.media!=='all')this.media='all';">
-    <link href="assets/css/material-icons.css" rel="stylesheet" >
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/fonts.css"  rel="stylesheet"  >
     <link href="assets/css/core/bootstrap-material-design.css" rel="stylesheet">
-    <link href="assets/css/vendors/featherlight/featherlight.min.css" rel="stylesheet">
-    <link href="assets/css/vendors/featherlight/featherlight.gallery.min.css" rel="stylesheet">
+    <link href="assets/css/vendors/animate/animate.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
     <!-- Schema.org markup goes here -->
 
     <!-- Open Graph markup goes here -->
@@ -79,18 +39,21 @@
           "@type" : "Person",
           "name" : "Fred Grott",
           "phone" : "1-219-448-5844"
-          "url":"http://shareme.github.io",
+          "url":"https://shareme.github.io",
           "sameAs": [
              "https://angel.co/fred-grott",
              "https://www.behance.net/gwsfredgrott",
+             "https://bitbucket.org/fredgrott/",
              "https://www.builtinchicago.org/member/fred-grott",
              "http://shareme.deviantart.com",
              "https://dribbble.com/FredGrott",
              "http://www.facebook.com/fredgrott",
              "https://geekli.st/u/fredgrott",
              "https://github.com/shareme",
+             "https://gitlab.com/fred.grott",
              "https://plus.google.com/u/0/+FredGrott",
              "https://news.ycombinator.com/user?id=fredgrott",
+             "https://keybase.io/fredgrott",
              "http://www.linkedin.com/in/shareme/en",
              "https://medium.com/@fredgrott",
              "https://www.pinterest.com/fredgrott/",
@@ -101,6 +64,7 @@
              "http://www.slideshare.net/shareme",
              "https://speakerdeck.com/fredgrott",
              "http://stackoverflow.com/users/237740/fred-grott",
+             "https://themeforest.net/user/fredgrott"
              "https://twitter.com/fredgrott",
              "https://www.youtube.com/channel/UCRQadYlHQ8DKRQ_WwUrfZ_w",
              "https://www.uplabs.com/fred_grott"
@@ -108,186 +72,35 @@
          }
       </script>
 
-      <!-- Twitter Card markup goes here -->
-
-
+    <!-- Twitter Card markup goes here -->
   </head>
-  <body class="bg-color">
-    <header>
-      <!-- Its easier to use one css class for the transition over-rides than some other extra
-           css classes as I am using velocity to do the transitions along with jwuery scroll detection.
-           By keeping it less complicated when I re-use it in my commerical web kits its less likely
-           that an end-user of my webkits will goof it up.-->
-      <nav class="navbar navbar-expand-md fixed-top navbar-transparent bg-primary navbar-dark">
-          <div class="container">
-            <!-- Yes, we should use tool-tips as an extra non-touch UX expereince.-->
-            <a class="navbar-brand" href="https://shareme.github.io" rel="tooltip" title="Designed by Fred Grott" data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                    <img src="assets/images/fg-script.png">
-            </a>
-            <!-- mobile menu button -->
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <!-- mobile-toggle replacement has to be this way or it breaks stuff-->
-                  <span class="navbar-toggler-icon"></span>
-            </button><!-- ./navbar-toggler -->
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!-- sitte drops first so that they appear first in the mobile menu-->
-              <ul class="navbar-nav mr-auto">
-
-                <div class="dropdown"><!-- dropdown -->
-                                     <button class="btn btn-outline-bluebase btn-round dropdown-toggle" type="button" id="aboutMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        About
-                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-custom-style-one" aria-labelledby="aboutMenuButton">
-
-                                               <a class="dropdown-item" href="#!">Services</a>
-                                               <a class="dropdown-item" href="#!">Speaking</a>
-                                    </div>
-                      </div><!-- ./dropdown -->
-
-                      <div class="dropdown"><!-- dropdown -->
-                                           <button class="btn btn-outline-bluebase btn-round dropdown-toggle" type="button" id="projectsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               Projects
-                                           </button>
-                                          <div class="dropdown-menu dropdown-menu-custom-style-one" aria-labelledby="projectsMenuButton">
-
-                                                     <a class="dropdown-item" href="#!">ProjectOne</a>
-
-                                          </div>
-                            </div><!-- ./dropdown -->
-                            <div class="dropdown"><!-- dropdown -->
-                                                 <button class="btn btn-outline-bluebase btn-round dropdown-toggle" type="button" id="toolsMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                     Tools
-                                                 </button>
-                                                <div class="dropdown-menu dropdown-menu-custom-style-one" aria-labelledby="toolsMenuButton">
-
-                                                           <a class="dropdown-item" href="#!">Tools</a>
-
-                                                </div>
-                                  </div><!-- ./dropdown -->
-
-
-              </ul><!-- ./navbar-nav -->
-
-            </div><!-- ./navbar-collapse -->
-          </div><!-- ./container -->
-        </nav><!-- ./nav navbar -->
-
-    </header>
-    <!-- holds the background hero image and the hero branding messages.
-         creatively using viewport units so that media queries are reduced.-->
-    <div class="landing-page-header parallax" >
+  <body>
+    <main>
       <div class="container">
-        <!-- Brand, hero phrase-->
-          <div class="content-center brand">
-            <h1 class="hero-title" data-foreground-color="blueaccentone">FredGrott, Web Istari</h1>
-            <h5 class="hero-caption" data-foreground-color="indigoaccentone">Pushing your Brand Up to the Highest Peak</h5>
-            <div class="text-center">
-                        <a href="http://www.facebook.com/fredgrott" class="btn btn-fill-bluebase btn-round" rel="tooltip" title="Follow me on facebook" data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                            <i class="fa  fa-facebook-square"></i>
-                        </a>
-                        <a href="https://twitter.com/fredgrott" class="btn btn-fill-bluebase  btn-round" rel="tooltip" title="Follow me  on Twitter" data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                            <i class="fa  fa-twitter"></i>
-                        </a>
-                        <a href="https://plus.google.com/u/0/+FredGrott" class="btn btn-fill-bluebase btn-round" rel="tooltip" title="Follow me on Google+ " data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                            <i class="fa  fa-google-plus"></i>
-                        </a>
-                        <a href="https://www.producthunt.com/@fredgrott" class="btn btn-fill-bluebase btn-round" rel="tooltip" title="Follow me on Product Hunt" data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                            <i class="fa  fa-product-hunt"></i>
-                        </a>
-                        <a href="https://medium.com/@fredgrott" class="btn btn-fill-bluebase btn-round" rel="tooltip" title="Follow me on Medium" data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                            <i class="fa fa-medium"></i>
-                        </a>
-                        <a href="https://github.com/shareme" class="btn btn-fill-bluebase btn-round" rel="tooltip" title="Follow me on github" data-placement="bottom" target="_blank" data-custom-class="tooltip-primary">
-                            <i class="fa  fa-github"></i>
-                        </a>
-                        <a href="mailto:fred.grott@gmail.com" class="btn btn-fill-bluebase btn-round" rel="tooltip" title="email me, no no recruiters" data-placement="bottom" data-custom-class="tooltip-primary">
-                            <i class="fa  fa-envelope"></i>
-                        </a>
-
-                    </div>
-          </div><!-- ./content-center brand -->
-          <!-- Brand, caption and in the case of some emerging brands
-               the place to put yoru 24-hour support number or slack channel link-->
-          <h6 class="category category-absolute category-font-style" data-foreground-color="indigoaccentone">Designed by
-                    <a href="https://shareme.github.io/" target="_blank" rel="tooltip" title="checkup on latest kits" data-placement="bottom" data-custom-class="tooltip-primary">
-                      <img src="assets/images/fg-script.png">
-                    </a> and my <a href="https://www.uplabs.com/fred_grott" rel="tooltip" title="checkup on latest designs" data-placement="bottom" data-custom-class="tooltip-primary">@UpLabsProfile</a>, which web kit is Pink?
-            </h6>
-
-      </div><!-- ./container -->
-    </div><!-- ./landing-page-header-->
-    <!-- still have to adjsut for fixed navbar, I just do a minimum adjust of 64px via 4rem setting and
-         than  some extra padding on page-title and sections so that I do not have to do some extra
-          media queries....see the stylecss file for details.-->
-    <div class="content-adjust-wrapper "><!-- content-adjust-wrapper-->
-       <main>
-         <section class="section-about-us">
-           <div class="container ">
-                 <div class="row">
-                   <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Who is Fred Grott?</h2>
-                        <h5 class="description">I have been right where you are at right now. You have an idea that needs launched and or brand executed and the website and or app to do it and very little time. Its easier for me to keep up with the changing web-tech landscape as I do it in my sleep. So why not let me do all the hard stuff and heavy lifting <b>AND YOU</b> can take the credit for all the awesome stuff created when <b>you use my web kits</b>.</h5>
-                    </div><!-- ./col -->
-                 </div><!-- ./row -->
-                 <div class="separator separator-primary"></div>
-                 <!-- BS is one the CSS frameworks that uses z-indexes for its navbar, tooltips, dropdowns, etc so
-                      any time one wants to do layers we have to negative-z-index those layers so that they appear
-                      below the navbar.-->
-                 <div class="section-story-overview">
-                  <div class="row">
-                        <div class="col-md-6">
-                          <div class="image-container image-left" style="background-image: url('assets/images/login.png')">
-
-                            <p class="blockquote blockquote-primary">"I cannot help it, I am a web geek infused with graphical artist ways."
-                                    <br>
-                                    <br>
-                                    <small>-Fred Grott</small>
-                                </p>
-                              </div>
-
-                              <div class="image-container" style="background-image: url('assets/images/mac.png')"></div>
-                        </div><!--./col -->
-                        <div class="col-md-5">
-                          <div class="image-container image-right" style="background-image: url('assets/images/type.png')"></div>
-                          <div class="card">
-                            <div class="card-body">
-                          <h3>The Web Got Complicated</h3>
-                            <p>Yeah, we got more web design powers but at the cost of keeping up with every new CSS spec and browser OEM quirks.
-                            </p>
-                            <p>
-                                My day starts early scanning the web for new CSS tricks and than translating them to something that can be done in a cross-browswer manner.
-                            </p>
-                            <p>Unlike the CSS3 or HTML5 title's the specs to follow are not contained in CSS3 or HTML5 spec but spread ou in a mind numbing mess of specs and cavets of which OEM did not implement which little spec detail. But, I thrive on chaasing down those detials and implementing something no one else has done yet that is working cross-browser.</p>
-                            <p>Sure you want all the cool designs, but do you have the time to do all the research? Probably not. That's where I come in as my web kits help you get-a-leg-up and launch your app and or brand without the huge down-time chasing a huge pile of messy web coding.
-                            </p>
-                          </div>
-                        </div>
-
-                        </div><!-- ./col -->
-                  </div><!-- ./row -->
-                </div><!-- ./section-story-overview -->
-             </div><!-- ./container -->
-         </section><!--./section -->
-       </main>
-       <footer class="footer footer-default">
-            <div class="container ">
-
-                <div class="copyright">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script> all rights reserved, Designed by
-                    <a href="https://shareme.github.io/" target="_blank">
-                      <img src="assets/images/fg-script.png">
-                    </a> and my <a href="https://www.uplabs.com/fred_grott">@UpLabsProfile</a>, which one is Pink?
-
-                </div>
-            </div>
-        </footer>
-    </div><!-- ./content-adjust-wrapper -->
-
-
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="meanimation">My Rock Story: A story of being cheated out of money by startups. And yet rising above the challenges of becoming an elite ThemeForest site theme author. Not a web ninja; but, yes a WEB Istari(ninjas are never seen, hence Istari is a better allegory). Some of my stuff: </p>
+            <a href="https://angel.co/fred-grott" class="angelist animated fadeIn" target="_blank">AngelList</a>&nbsp;
+            <a href="https://www.behance.net/gwsfredgrott" class=" behance animated fadeIn" target="_blank">BeHance</a>&nbsp;
+            <a href="http://shareme.deviantart.com" class="deviantart animated fadeIn" target="_blank">DeviantArt</a>&nbsp;
+            <a href="https://dribbble.com/FredGrott" class="dribbble animated fadeIn" target="_blank">Dribbble</a>&nbsp;
+            <a href="https://github.com/shareme" class="github animated fadeIn" target="_blank">Github</a>&nbsp;
+            <a href="https://plus.google.com/u/0/+FredGrott" class="googleplus animated fadeIn" target="_blank">Google+</a>&nbsp;
+            <a href="https://news.ycombinator.com/user?id=fredgrott" class="hackernews animated fadeIn" target="_blank">HackerNews</a>&nbsp;
+            <a href="https://keybase.io/fredgrott" class="keybase animated fadeIn" target="_blank">Keybase</a>&nbsp;
+            <a href="https://medium.com/@fredgrott" class="medium animated fadeIn" target="_blank">Medium</a>&nbsp;
+            <a href="https://www.pinterest.com/fredgrott/" class="pinterest animated fadeIn" target="_blank">Pinterest</a>&nbsp;
+            <a href="https://www.producthunt.com/@fredgrott" class="producthunt animated fadeIn" target="_blank">ProductHunt</a>&nbsp;
+            <a href="http://www.quora.com/Fred-Grott" class="quora animated fadeIn" target="_blank">Quora</a>&nbsp;
+            <a href="http://www.reddit.com/user/fredgrott" class="reddit animated fadeIn" target="_blank">Reddit<a/>&nbsp;
+            <a href="http://www.slideshare.net/shareme" class="slideshare animated fadeIn" target="_blank">SlideShare</a>&nbsp;
+            <a href="http://stackoverflow.com/users/237740/fred-grott" class="stackoverflow animated fadeIn" target="_blank">StackOverflow</a>&nbsp;
+            <a href="https://themeforest.net/user/fredgrott" class="themeforest animated fadeIn" target="_blank">ThemeForest</a>&nbsp;
+            <a href="https://twitter.com/fredgrott" class="twitter animated fadeIn" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- Google Analytics -->
       <script type="text/javascript">
@@ -303,26 +116,23 @@
 
       <!-- js goes here to make page load faster, order is:
 
-                   1. jquery
-                   2. BSM and BS deps, popper snackbarjs and tether
-                   3. BSM
-                   4. 3rd party jqueery plugins
-                   5. viewport bug js
-                   6  inti js file
-        -->
-      <script src="assets/js/core/jquery-3.2.1.js"></script>
-      <script src="assets/js/core/popper.min.js"></script>
-      <script src="assets/js/core/snackbar.min.js"></script>
-      <script src="assets/js/core/tether.min.js"></script>
-      <script src="assets/js/core/bootstrap-material-design.js"></script>
-      <script src="assets/js/vendors/featherlight/featherlight.min.js"></script>
-      <script src="assets/js/vendors/featherlight/featherlight.gallery.min.js"></script>
-      <script src="assets/js/vendors/velocity/velocity.js"></script>
-      <script src="assets/js/vendors/velocity/velocity.ui.js"></script>
-      <script src="assets/js/vendors/scrollmagic/ScrollMagic.js"></script>
-      <script src="assets/js/vendors/scrollmagic/animation.velocity.js"></script>
-      <script src="assets/js/core/ie10-viewport-bug-workaround.js"></script>
-      <script src="assets/js/init.js"></script>
+                 1. jquery
+                 2. BSM deps and BS deps, popper snackbarjs and tether
+                 3. BSM
+                 4. viewport bug js
+                 5. 3rd party jqueery plugins
+                 6  init js file
+      -->
+    <script src="assets/js/core/jquery-3.2.1.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/snackbar.min.js"></script>
+    <script src="assets/js/core/tether.min.js"></script>
+    <script src="assets/js/core/bootstrap-material-design.js"></script>
+    <!-- BSM docs example shows this BS dep workaround coming after the bs js import -->
+    <script src="assets/js/core/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/vendors/lettering/jquery.lettering.js"></script>
+    <script src="assets/js/vendors/textillate/jquery.textillate.js"></script>
 
+    <script src="assets/js/init.js"></script>
   </body>
 </html>
