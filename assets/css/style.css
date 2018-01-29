@@ -1,9 +1,11 @@
 /*   Fred Grott
 
-     0.0.1
+     1.1.1
 
      0 iphone-x notch adjustment
      1 font assignments
+     2 preload
+     3 main
 */
 
 /* 0 iphone-x notch adjustment */
@@ -15,102 +17,62 @@
 /* 1 font assignments */
 body{
   font-family: 'Roboto Condensed', sans-serif;
-  animation-name: toBlack;
-  animation-duration: 16s;
-  animation-fill-mode: forwards;
-  font-size: 2.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-p{
-  animation-name: toRed;
-  animation-duration: 17s;
-  animation-fill-mode: forwards;
-}
 
-a.angalelist{
-  animation-duration: 3s;
-  animation-delay: 2s;
-}
 
-a.behance{
-  animation-duration: 3s;
-  animation-delay: 2s;
 
 }
-a.deviantart{
-  animation-duration: 3s;
-  animation-delay: 4s;
+.card h1.card-title,
+.card h2.card-title,
+.card h3.card-title,
+.card h4.card-title,
+.card h5.card-title,
+.card h6.card-title {
+  font-family: 'Roboto Slab',serif;
+  text-shadow: 0px 8px 8px rgba(140, 158, 255, 0.65);
+  color: #1a237e;
+  font-weight: bold;
 }
-a.dribbble{
-  animation-duration: 3s;
-  animation-delay: 6s;
+.card-subtitle {
+  font-family: 'Roboto Condensed',sans-serif;
+  font-weight: 500;
 }
-a.github{
-  animation-duration: 3s;
-  animation-delay: 8s;
+.footer-copyright-text{
+  font-family: 'Roboto Condensed',sans-serif;
 }
-a.googleplus{
-  animation-duration: 3s;
-  animation-delay: 10s;
+blockquote{
+  font-family: 'Roboto Condensed',sans-serif;
+  font-style: italic;
+  background-color: #c5cae9;
+  padding: 1rem;
 }
-a.hackernews{
-  animation-duration: 3s;
-  animation-delay: 12s;
+ul{
+  font-family: 'Roboto Condensed',sans-serif;
 }
-a.keybase{
-  animation-duration: 3s;
-  animation-delay: 12s;
-}
-a.medium{
-  animation-duration: 3s;
-  animation-delay: 14s;
-}
-a.producthunt{
-  animation-duration: 3s;
-  animation-delay: 14s;
-}
-a.quora{
-  animation-duration: 3s;
-  animation-delay: 14s;
-}
-a.reddit{
-  animation-duration: 3s;
-  animation-delay: 14s;
-}
-a.stackoverflow{
-  animation-duration: 3s;
-  animation-delay: 16s;
-}
-a.themeforest{
-  animation-duration: 3s;
-  animation-delay: 18s;
-}
-a.twitter{
-  animation-duration: 3s;
-  animation-delay: 20s;
+
+/* 2 preload */
+.preload * {
+-webkit-transition: none !important;
+-moz-transition: none !important;
+-ms-transition: none !important;
+-o-transition: none !important;
+   transition: none !important;
 }
 
 
-@keyframes toBlack {
-  0% {
-    background-color: #f9f6ea;
-  }
-  60% {
-    background-color: #f9f6ea;
-  }
-  100% {
-    background-color: black;
-  }
+/* 3 main */
+.card-box-shadow-none{
+  border: 0;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0), 0 3px 1px -2px rgba(0, 0, 0, 0.0), 0 1px 5px 0 rgba(0, 0, 0, 0.0);
 }
-@keyframes toRed {
-  0% {
-    color: black;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: red;
-  }
+ul li{
+  padding-top: 0.15rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+}
+ul{
+  background-color: rgba(140, 158, 255, 0.22);
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }

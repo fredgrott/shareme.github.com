@@ -1,9 +1,11 @@
 /*  Fred Grott
 
-    0.0.1
+    1.1.1
 
     0 es5-es6 adjsutment
     1 BSM initialization
+
+
 
 */
 
@@ -13,19 +15,8 @@
 /* ! BSM initialization */
 $( document ).ready(function() {
   $('body').bootstrapMaterialDesign();
+  /* preload css class applied to body until page load to prevent premature triggering of transitions */
+  $("body").removeClass("preload");
 
 
-});
-$('.meanimation').textillate({
-  initialDelay: 100,
-  loop: false,
-  in: {
-    effect: 'fadeInUp',
-    delayScale: .4,
-    delay: 56,
-    sync: false,
-    shuffle: true,
-    reverse: true
-  },
-  type: 'word'
 });
